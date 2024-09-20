@@ -1,0 +1,15 @@
+.row {
+    display: flex; /* Flexbox for row layout */
+    gap: 20px; /* Space between columns */
+    margin: 0 auto; /* Center the row horizontally */
+    max-width: 1200px; /* Maximum width for the row */
+    padding: 20px; /* Padding around the row */
+  }
+  
+  .column {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Padding inside each column */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners for columns */
+  }
+  
