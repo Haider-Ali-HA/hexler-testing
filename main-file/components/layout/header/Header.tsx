@@ -197,8 +197,11 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="contact">Contact</Link>
+                  </li> */}
+                  <li>
+                    <Link href="career">Career</Link>
                   </li>
                   {/* <li className="ml-20 d-none d-lg-block">
                     <a className="search-trigger" onClick={handleSearch}>
@@ -228,7 +231,7 @@ const Header = () => {
             </div>
             <div className="d-none d-lg-inline-block">
               <Link href="contact" className="btn-one">
-                Get A Quote <i className="fa-regular fa-arrow-right-long"></i>
+                Contact Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
             </div>
             <div className="bars d-block d-lg-none">

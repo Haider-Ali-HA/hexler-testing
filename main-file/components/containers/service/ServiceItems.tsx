@@ -19,21 +19,22 @@ const ServiceItems = () => {
     <section className="service-inner-area pt-120 pb-120">
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-4 col-md-6">
+
+        <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Two} alt="Image" priority />
+                <Image src={Four} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">
-                  <Image src={Eight} alt="icon" priority />
+                  <Image src={Ten} alt="icon" priority />
                 </div>
                 <div className="shape">
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
                   <Link href="service-details" className="primary-hover">
-                    Database Security
+                    Web Development
                   </Link>
                 </h4>
                 <p>
@@ -46,33 +47,7 @@ const ServiceItems = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-two__item">
-              <div className="image">
-                <Image src={Three} alt="Image" priority />
-              </div>
-              <div className="service-two__content">
-                <div className="icon">
-                  <Image src={Nine} alt="icon" priority />
-                </div>
-                <div className="shape">
-                  <Image src={One} alt="shape" priority />
-                </div>
-                <h4>
-                  <Link href="service-details" className="primary-hover">
-                    IT Consultancy
-                  </Link>
-                </h4>
-                <p>
-                  Pellentesque nec the condimentum nec lorem nulla augue est
-                  ultricies ac iaculis.
-                </p>
-                <Link className="read-more-btn" href="service-details">
-                  Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
@@ -87,7 +62,7 @@ const ServiceItems = () => {
                 </div>
                 <h4>
                   <Link href="service-details" className="primary-hover">
-                    App Development
+                    Mobile App Development
                   </Link>
                 </h4>
                 <p>
@@ -100,33 +75,7 @@ const ServiceItems = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-two__item">
-              <div className="image">
-                <Image src={Five} alt="Image" priority />
-              </div>
-              <div className="service-two__content">
-                <div className="icon">
-                  <Image src={Eleven} alt="icon" priority />
-                </div>
-                <div className="shape">
-                  <Image src={One} alt="shape" priority />
-                </div>
-                <h4>
-                  <Link href="service-details" className="primary-hover">
-                    Cyber Security
-                  </Link>
-                </h4>
-                <p>
-                  Pellentesque nec the condimentum nec lorem nulla augue est
-                  ultricies ac iaculis.
-                </p>
-                <Link className="read-more-btn" href="service-details">
-                  Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
+
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
@@ -154,21 +103,22 @@ const ServiceItems = () => {
               </div>
             </div>
           </div>
+          
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Seven} alt="Image" priority />
+                <Image src={Three} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">
-                  <Image src={Thirteen} alt="icon" priority />
+                  <Image src={Nine} alt="icon" priority />
                 </div>
                 <div className="shape">
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
                   <Link href="service-details" className="primary-hover">
-                    IT Management
+                    Software Testing and QA
                   </Link>
                 </h4>
                 <p>
@@ -181,6 +131,66 @@ const ServiceItems = () => {
               </div>
             </div>
           </div>
+          
+          
+          <div className="col-lg-4 col-md-6">
+            <div className="service-two__item">
+              <div className="image">
+                <Image src={Three} alt="Image" priority />
+              </div>
+              <div className="service-two__content">
+                <div className="icon">
+                  <Image src={Nine} alt="icon" priority />
+                </div>
+                <div className="shape">
+                  <Image src={One} alt="shape" priority />
+                </div>
+                <h4>
+                  <Link href="service-details" className="primary-hover">
+                    DevOps Solutions
+                  </Link>
+                </h4>
+                <p>
+                  Pellentesque nec the condimentum nec lorem nulla augue est
+                  ultricies ac iaculis.
+                </p>
+                <Link className="read-more-btn" href="service-details">
+                  Read More <i className="fa-regular fa-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+          
+
+          <div className="col-lg-4 col-md-6">
+            <div className="service-two__item">
+              <div className="image">
+                <Image src={Five} alt="Image" priority />
+              </div>
+              <div className="service-two__content">
+                <div className="icon">
+                  <Image src={Eleven} alt="icon" priority />
+                </div>
+                <div className="shape">
+                  <Image src={One} alt="shape" priority />
+                </div>
+                <h4>
+                  <Link href="service-details" className="primary-hover">
+                    Game Development
+                  </Link>
+                </h4>
+                <p>
+                  Pellentesque nec the condimentum nec lorem nulla augue est
+                  ultricies ac iaculis.
+                </p>
+                <Link className="read-more-btn" href="service-details">
+                  Read More <i className="fa-regular fa-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </section>

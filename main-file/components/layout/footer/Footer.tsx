@@ -158,9 +158,7 @@ const Footer = () => {
           >
             <h3 className="footer-title">Contact Us</h3>
             <p className="mb-20">
-              Glen Allen, VA 23060,
-              <br />
-              NSTP, NUST, Islamabad
+              Islamabad, Pakistan
             </p>
             <ul className="footer-contact">
               <li>

@@ -30,7 +30,7 @@ const CounterSection = () => {
             <div className="content">
               <h3>
                 <span className="count">
-                  <Counter value={150} />
+                  <Counter value={75} />
                 </span>
                 +
               </h3>
@@ -48,7 +48,7 @@ const CounterSection = () => {
             <div className="content">
               <h3>
                 <span className="count">
-                  <Counter value={120} />
+                  <Counter value={50} />
                 </span>
                 +
               </h3>
@@ -66,7 +66,7 @@ const CounterSection = () => {
             <div className="content">
               <h3>
                 <span className="count">
-                  <Counter value={20} />
+                  <Counter value={15} />
                 </span>
                 +
               </h3>
@@ -84,7 +84,7 @@ const CounterSection = () => {
             <div className="content">
               <h3>
                 <span className="count">
-                  <Counter value={50} />
+                  <Counter value={30} />
                 </span>
                 +
               </h3>
