@@ -23,12 +23,12 @@ const page = () => {
       <Service />
       <About />
       <CounterSection />
-      <Case />
+      {/* <Case /> */}
       <Offer />
       <Brand />
       <Process />
       <Testimonial />
-      <Blog />
+      {/* <Blog /> */}
       <Footer />
       <CustomCursor />
       <ScrollProgressButton />

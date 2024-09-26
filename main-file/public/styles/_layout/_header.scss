@@ -12,7 +12,8 @@
 .header-top {
   padding: 16px 0;
   overflow: hidden;
-  background-color: var(--heading-color);
+  // background-color: var(--heading-color); //orignal
+  background-color: var(--secondary-color); //modified
   .header-top-wrp {
     display: flex;
     justify-content: space-between;
@@ -75,7 +76,8 @@
       top: 0;
       left: 0;
       width: 30%;
-      background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%);
+      background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%); //orignal
+      // background: linear-gradient(270deg, #101C24 6.32%, #00060c 216.42%);
       height: 100%;
       content: "";
       z-index: -1;
@@ -100,7 +102,8 @@
       position: fixed;
       width: 100%;
       top: 0;
-      background-color: var(--white);
+      // background-color: var(--white); //orignal
+      background-color: #151327; 
       z-index: 999;
       box-shadow: var(--shadow);
       .mega-menu {
@@ -133,6 +136,7 @@
           a {
             font-weight: 600;
             padding: 40px 0;
+            color: var(--white);
             i {
               font-size: 12px;
               transition: var(--transition);
@@ -214,7 +218,8 @@
               a {
                 display: block;
                 padding: 10px 20px;
-                color: var(--heading-color) !important;
+                // color: var(--heading-color) !important; //orignal
+                color: #151327 !important; 
                 &:hover {
                   padding-left: 25px;
                   color: var(--primary-color) !important;
@@ -464,12 +469,15 @@
     a {
       @include radius(40px, 40px, 40px);
       border: 1px solid rgba(255, 255, 255, 0.25);
-      color: var(--primary-color);
+      color: var(--primary-color); //orignal
+      // color: var(--secondary-color); //modified
       margin-right: 10px;
       &:hover {
         background-color: var(--primary-color);
-        color: var(--heading-color);
-        border: 1px solid var(--primary-color);
+        color: var(--heading-color); //orignal: heading-color
+        // color: var(--secondary-color); //orignal: heading-color
+        border: 1px solid var(--primary-color); 
+        // border: 1px solid var(--secondary-color); //orignal: primary
       }
     }
   }
@@ -563,3 +571,6 @@
   }
 }
 // Mobile menu area end here ***
+.header-area{
+  height: 6.5rem !important;
+}

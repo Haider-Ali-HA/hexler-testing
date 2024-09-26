@@ -3,10 +3,15 @@
   --kumbh: "Kumbh Sans", sans-serif;
 
   // Colors ***
-  --primary-color: #3c72fc;
+  // --primary-color: #3c72fc; //orignal
+  --primary-color: #101C24;
   --primary10: rgba(60, 114, 252, 0.1);
-  --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
-  --secondary-color: #0f0d1d;
+  --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%); //orignal
+  // --gradient-bg: linear-gradient(90deg, #526785 -10.59%, #00060c 300.59%); //added new but no workded
+  // --gradient-bg: linear-gradient(90deg, #374147 -10.59%, #00060c 300.59%); //new added for form
+  --secondary-color: #0f0d1d; //orignal
+  // --secondary-color: #526785;
+  --tertiary-color: #0f0d1d; //Added new for footer
   --main-bg: #ffffff;
   --sub-bg: #f3f7fb;
   --heading-color: #0f0d1d;
@@ -28,6 +33,22 @@
 }
 
 // Dark mood collor area start here ***
+// .darken {
+//   --primary-color: #3c72fc;
+//   --primary10: rgba(60, 114, 252, 0.1);
+//   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+//   --secondary-color: #0f0d1d;
+//   --main-bg: #151327;
+//   --sub-bg: #16142c;
+//   --heading-color: #fff;
+//   --paragraph: rgba(255, 255, 255, 0.8);
+//   --span: rgba(255, 255, 255, 0.8);
+//   --border: #e3e3e3;
+//   --white: #ffffff;
+//   --black: #000000;
+//   background-color: var(--main-bg);
+//   color: var(--paragraph);
+// }
 .darken {
   --primary-color: #3c72fc;
   --primary10: rgba(60, 114, 252, 0.1);

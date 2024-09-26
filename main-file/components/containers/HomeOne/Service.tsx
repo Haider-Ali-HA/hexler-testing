@@ -67,11 +67,10 @@ const Service = () => {
                 <Image src={Four} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">IT Management</Link>
+                <Link href="service-details">Web Development</Link>
               </h4>
               <p>
-                Pellentesque nec the condimentum nec lorem nulla augue est
-                ultricies ac iaculis ut euismod quis sapien.
+              Elevate your online presence with Hexler Tech’s expert web development services. From sleek designs to powerful functionalities, we create websites that engage users.
               </p>
             </div>
           </div>
@@ -95,14 +94,14 @@ const Service = () => {
                 <Image src={Five} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Cyber Security</Link>
+                <Link href="service-details">Application Development</Link>
               </h4>
               <p>
-                Pellentesque nec the condimentum nec lorem nulla augue est
-                ultricies ac iaculis ut euismod quis sapien.
+              Unlock your potential with Hexler Tech’s app development. We deliver intuitive, high-performance apps for seamless user experiences and greater engagement.
               </p>
             </div>
           </div>
+
           <div
             className="col-lg-4 col-md-6 "
             data-aos="fade-up"
@@ -123,14 +122,98 @@ const Service = () => {
                 <Image src={Six} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Web Development</Link>
+                <Link href="service-details">Digital Marketing</Link>
               </h4>
               <p>
-                Pellentesque nec the condimentum nec lorem nulla augue est
-                ultricies ac iaculis ut euismod quis sapien.
+              Stand out online with Hexler Tech’s digital marketing expertise. From SEO strategies to engaging social media campaigns, we drive traffic and conversions to elevate your brand digitally.
               </p>
             </div>
           </div>
+
+          <div
+            className="col-lg-4 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item " + (isOverviewOpen === 3 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(3)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Six} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="service-details">AI Models</Link>
+              </h4>
+              <p>
+              Unlock AI potential with Hexler Tech’s custom models. From predictive analytics to natural language processing, we create solutions that optimize your operations.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="col-lg-4 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item " + (isOverviewOpen === 4 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(4)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Six} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="service-details">Graphic Designing</Link>
+              </h4>
+              <p>
+              Capture attention with Hexler Tech’s creative graphic design services. From stunning visuals to cohesive branding & communicate your brand’s story with impact & style .
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="col-lg-4 col-md-6 "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div
+              className={
+                "service__item " + (isOverviewOpen === 5 ? " active" : " ")
+              }
+              onMouseEnter={() => setOverviewOpen(5)}
+            >
+              <div className="service-shape">
+                <Image src={Three} alt="shape" priority />
+              </div>
+              <div className="service__icon">
+                <Image src={Six} alt="icon" priority />
+              </div>
+              <h4>
+                <Link href="service-details">Data Analysis</Link>
+              </h4>
+              <p>
+              Unlock your data’s potential with Hexler Tech’s advanced analysis services. From trend identification to workflow enhancement, we empower businesses to drive innovation.
+              </p>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

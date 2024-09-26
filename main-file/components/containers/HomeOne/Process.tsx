@@ -46,8 +46,7 @@ const Process = () => {
               <div className="process__content">
                 <h4 className="mt-25 mb-10">Define Requirements</h4>
                 <p>
-                  In a free hour, when our power of choice is untrammelled and
-                  when nothing prevents dolor sit amet, consectetur
+                We begin by thoroughly gathering your goals and requirements, ensuring that our solution is closely aligned with your vision and objectives.
                 </p>
               </div>
             </div>
@@ -69,8 +68,7 @@ const Process = () => {
               <div className="process__content">
                 <h4 className="mt-25 mb-10">Design & Prototyping</h4>
                 <p>
-                  In a free hour, when our power of choice is untrammelled and
-                  when nothing prevents dolor sit amet, consectetur
+                In this phase, we craft detailed designs and prototypes to visualize the user experience, facilitating feedback and refinement throughout the process.
                 </p>
               </div>
             </div>
@@ -87,10 +85,9 @@ const Process = () => {
                 <span className="process-number">3</span>
               </div>
               <div className="process__content">
-                <h4 className="mt-25 mb-10">Finial Solution</h4>
+                <h4 className="mt-25 mb-10">Final Solution</h4>
                 <p>
-                  In a free hour, when our power of choice is untrammelled and
-                  when nothing prevents dolor sit amet, consectetur
+                Finally, we develop and thoroughly test the solution, guaranteeing that it is both reliable and ready for a successful launch.
                 </p>
               </div>
             </div>

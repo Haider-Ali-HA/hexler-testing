@@ -43,7 +43,7 @@
 	&__item {
 		position: relative;
 		z-index: 1;
-		background-color: var(--white);
+		background-color: var(--white); //orignal
 		.service-shape {
 			position: absolute;
 			top: 22px;
@@ -56,9 +56,13 @@
 		h4 {
 			margin-top: 20px;
 			margin-bottom: 10px;
+			a {
+				color: #151327; //added new
+			}
 		}
 		p {
 			transition: var(--transition);
+			color: #151327; //added new
 		}
 		&::after {
 			position: absolute;
@@ -919,7 +923,7 @@
 	&__icon {
 		@include radius(70px, 70px, 70px);
 		margin: 0 auto;
-		background: linear-gradient(180deg, #3c72fc -210.71%, #00060c 100%);
+		background: linear-gradient(180deg, #3c72fc -210.71%, #00060c 100%); //orignal
 		margin-top: -35px;
 		transition: 1s;
 	}
@@ -965,6 +969,7 @@
 				visibility: visible;
 			}
 			.offer__icon {
+				// background: var(--gradient-bg); //orignal
 				background: var(--gradient-bg);
 				transform: rotateY(360deg);
 				svg path {
@@ -1150,8 +1155,8 @@
 			right: 40px;
 		}
 		padding: 40px;
-		background-color: var(--white);
 		box-shadow: var(--shadow);
+		background-color: var(--white);
 	}
 	&-two {
 		&-area {

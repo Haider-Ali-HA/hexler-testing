@@ -9,6 +9,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	border-radius: .5rem;
 	i {
 		margin-left: 8px;
 		transition: var(--transition);

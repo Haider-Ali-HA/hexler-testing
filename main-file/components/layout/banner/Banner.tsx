@@ -164,7 +164,7 @@ const Banner = () => {
                     data-delay=".5s"
                     className="text-white"
                   >
-                    Excellent IT Services for Your Success
+                    Best IT Services for Your Success
                   </h1>
                   <p
                     data-animation="slideInRight"
@@ -172,11 +172,9 @@ const Banner = () => {
                     data-delay=".7s"
                     className="mt-20"
                   >
-                    Consectetur adipiscing elit aenean scelerisque at augue
-                    vitae consequat
+                    We deliver software solutions that streamline operations 
                     <br />
-                    quisque eget congue velit in cursus leo sed sodales est eget
-                    turpis.
+                    and unlock new opportunities for growth.
                   </p>
                   <Link
                     data-animation="slideInRight"
@@ -305,7 +303,7 @@ const Banner = () => {
                         fill="white"
                       />
                     </svg>{" "}
-                    Best it SOULTION Provider
+                    We Tailor Your Software Needs 
                   </h4>
                   <h1
                     data-animation="slideInRight"
@@ -313,7 +311,7 @@ const Banner = () => {
                     data-delay=".5s"
                     className="text-white"
                   >
-                    Excellent It Services for Your Success
+                    Best IT Services for Your Success
                   </h1>
                   <p
                     data-animation="slideInRight"
@@ -321,11 +319,9 @@ const Banner = () => {
                     data-delay=".7s"
                     className="mt-20"
                   >
-                    Consectetur adipiscing elit aenean scelerisque at augue
-                    vitae consequat
+                    We deliver software solutions that streamline operations 
                     <br />
-                    quisque eget congue velit in cursus leo sed sodales est eget
-                    turpis.
+                    and unlock new opportunities for growth.
                   </p>
                   <Link
                     data-animation="slideInRight"
