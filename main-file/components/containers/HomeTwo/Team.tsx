@@ -150,7 +150,7 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Hassan Naveed Khan"
+                    Hassan Naveed Khan
                   </Link>
                 </h4>
                 <span className="text-white">CFO</span>
