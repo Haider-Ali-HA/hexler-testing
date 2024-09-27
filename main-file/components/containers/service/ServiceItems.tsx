@@ -33,7 +33,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/web-development" className="primary-hover">
                     Web Development
                   </Link>
                 </h4>
@@ -61,7 +61,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/app-development" className="primary-hover">
                     Mobile App Development
                   </Link>
                 </h4>
@@ -89,7 +89,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/ui-ux-design" className="primary-hover">
                     UI/UX Design
                   </Link>
                 </h4>
@@ -117,7 +117,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/software-testing" className="primary-hover">
                     Software Testing and QA
                   </Link>
                 </h4>
@@ -146,7 +146,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/devops" className="primary-hover">
                     DevOps Solutions
                   </Link>
                 </h4>
@@ -175,7 +175,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service-details" className="primary-hover">
+                  <Link href="service/game-development" className="primary-hover">
                     Game Development
                   </Link>
                 </h4>
