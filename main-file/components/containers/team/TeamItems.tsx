@@ -12,6 +12,7 @@ const TeamItems = () => {
     <section className="team-area pt-120 pb-120" id="team-two">
       <div className="container">
         <div className="row g-4">
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
@@ -25,10 +26,10 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Kawser Ahmed
+                  Saif Ur Rehman Orakzai
                   </Link>
                 </h4>
-                <span className="text-white">Web Designer</span>
+                <span className="text-white"></span>
               </div>
               <div className="team__share">
                 <ul>
@@ -54,6 +55,7 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
@@ -67,10 +69,10 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Karniz Fatema
+                    Sohaib Ahmed Sipra
                   </Link>
                 </h4>
-                <span className="text-white">Customer Support</span>
+                <span className="text-white">CTO</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -96,6 +98,7 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
@@ -109,10 +112,10 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Alex Pranto
+                    Hassan Naveed Khan
                   </Link>
                 </h4>
-                <span className="text-white">UI/UX Designer</span>
+                <span className="text-white">CFO</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -138,6 +141,7 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
@@ -151,7 +155,50 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Anneya Roy
+                    Sohail Khan
+                  </Link>
+                </h4>
+                <span className="text-white">CBO</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Five} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                    Musa Haroon
                   </Link>
                 </h4>
                 <span className="text-white">Software Engineer</span>
@@ -180,48 +227,7 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
-          <div
-            className="col-xl-4 col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1500"
-          >
-            <div className="team__item">
-              <div className="image">
-                <Image src={Five} alt="Image" priority />
-              </div>
-              <div className="team__content">
-                <h4>
-                  <Link className="text-white" href="team-details">
-                    Prince Sagor
-                  </Link>
-                </h4>
-                <span className="text-white">Programmer</span>
-              </div>
-              <div className="team__share">
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
-                  </li>
-                </ul>
-                <button>
-                  <i className="fa-sharp fa-light fa-share-nodes"></i>
-                </button>
-              </div>
-            </div>
-          </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
@@ -235,10 +241,10 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Mohmmad Arif
+                  Haadiya Sajid
                   </Link>
                 </h4>
-                <span className="text-white">Marketing Manager</span>
+                <span className="text-white">Software Engineer</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -264,6 +270,354 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Moiz Akhter
+                  </Link>
+                </h4>
+                <span className="text-white">AI Software Developer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Aazan Shami
+                  </Link>
+                </h4>
+                <span className="text-white">BDO</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Yousuf Khan
+                  </Link>
+                </h4>
+                <span className="text-white">Frontend Developer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Hadeed
+                  </Link>
+                </h4>
+                <span className="text-white">Search Engine Optimizer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Fatima Sarmad
+                  </Link>
+                </h4>
+                <span className="text-white">UI/UX Designer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Muhammad Mehdi Ali
+                  </Link>
+                </h4>
+                <span className="text-white">Junior Software Engineer</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Asif Hamdaani
+                  </Link>
+                </h4>
+                <span className="text-white">GM</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Six} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href="team-details">
+                  Mudassir
+                  </Link>
+                </h4>
+                <span className="text-white">GM</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
     </section>

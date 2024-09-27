@@ -47,6 +47,7 @@ const Service = () => {
           </Link>
         </div>
         <div className="row g-4">
+
           <div
             className="col-lg-4 col-md-6 "
             data-aos="fade-up"
@@ -67,13 +68,14 @@ const Service = () => {
                 <Image src={Four} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Web Development</Link>
+                <Link href="service/web-development">Web Development</Link>
               </h4>
               <p>
-              Elevate your online presence with Hexler Tech’s expert web development services. From sleek designs to powerful functionalities, we create websites that engage users.
+                Elevate your online presence with Hexler Tech’s expert web development services. From sleek designs to powerful functionalities, we create websites that engage users.
               </p>
             </div>
           </div>
+
           <div
             className="col-lg-4 col-md-6 "
             data-aos="fade-up"
@@ -94,10 +96,10 @@ const Service = () => {
                 <Image src={Five} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Application Development</Link>
+                <Link href="service/app-development">Mobile App Development</Link>
               </h4>
               <p>
-              Unlock your potential with Hexler Tech’s app development. We deliver intuitive, high-performance apps for seamless user experiences and greater engagement.
+                Unlock your potential with Hexler Tech’s app development. We deliver intuitive, high-performance apps for seamless user experiences and greater engagement.
               </p>
             </div>
           </div>
@@ -122,10 +124,10 @@ const Service = () => {
                 <Image src={Six} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Digital Marketing</Link>
+                <Link href="service/game-development">Game Development</Link>
               </h4>
               <p>
-              Stand out online with Hexler Tech’s digital marketing expertise. From SEO strategies to engaging social media campaigns, we drive traffic and conversions to elevate your brand digitally.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae eatae alias similique, magnam velit repellat architecto eum error ex quod mollitia deserunt consectetur?
               </p>
             </div>
           </div>
@@ -150,10 +152,10 @@ const Service = () => {
                 <Image src={Six} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">AI Models</Link>
+                <Link href="service/ui-ux-design">UI/UX Design</Link>
               </h4>
               <p>
-              Unlock AI potential with Hexler Tech’s custom models. From predictive analytics to natural language processing, we create solutions that optimize your operations.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe impedit unde magnam quam eos quasi beatae provident molestias ad, pariatur, nihil iusto sunt earum et?
               </p>
             </div>
           </div>
@@ -178,10 +180,10 @@ const Service = () => {
                 <Image src={Six} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Graphic Designing</Link>
+                <Link href="service/devops">DevOps Solutions</Link>
               </h4>
               <p>
-              Capture attention with Hexler Tech’s creative graphic design services. From stunning visuals to cohesive branding & communicate your brand’s story with impact & style .
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae odit omnis nihil. Animi in dolor tenetur! Obcaecati iusto delectus soluta dignissimos vero
               </p>
             </div>
           </div>
@@ -206,14 +208,14 @@ const Service = () => {
                 <Image src={Six} alt="icon" priority />
               </div>
               <h4>
-                <Link href="service-details">Data Analysis</Link>
+                <Link href="service/software-testing">Sofware Testing and QA</Link>
               </h4>
               <p>
-              Unlock your data’s potential with Hexler Tech’s advanced analysis services. From trend identification to workflow enhancement, we empower businesses to drive innovation.
+                Unlock your data’s potential with Hexler Tech’s advanced analysis services. From trend identification to workflow enhancement, we empower businesses to drive innovation.
               </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>

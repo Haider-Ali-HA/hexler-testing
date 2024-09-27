@@ -1,0 +1,24 @@
+/* Loading.css */
+@keyframes blink {
+    0%, 100% {
+      border-top-color: white;
+    }
+    50% {
+      border-top-color: #3c72fc;
+    }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid white; /* Blinking color */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite, blink 1s step-start infinite; /* Combined animations */
+  }
+  

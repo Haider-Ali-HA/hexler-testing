@@ -66,10 +66,10 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Kawser Ahmed
+                    Saif Ur Rehman Orakzai
                   </Link>
                 </h4>
-                <span className="text-white">Web Designer</span>
+                <span className="text-white">CEO</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -108,10 +108,10 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Karniz Fatema
+                    Sohaib Ahmed Sipra
                   </Link>
                 </h4>
-                <span className="text-white">Customer Support</span>
+                <span className="text-white">CTO</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -150,10 +150,10 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href="team-details">
-                    Alex Pranto
+                    Hassan Naveed Khan"
                   </Link>
                 </h4>
-                <span className="text-white">UI/UX Designer</span>
+                <span className="text-white">CFO</span>
               </div>
               <div className="team__share">
                 <ul>

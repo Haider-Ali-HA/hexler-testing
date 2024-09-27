@@ -4,7 +4,7 @@ import One from "@/public/images/banner/inner-banner-shape2.png";
 import Two from "@/public/images/banner/inner-banner-shape1.png";
 import Three from "@/public/images/banner/inner-banner-shape3.png";
 
-const CmnBanner = ({ title }: any) => {
+const CmnBanner = ({ title, isService }: any) => {
   return (
     <section
       className="banner__inner-page bg-image pt-180 pb-180 bg-image"
@@ -52,6 +52,10 @@ const CmnBanner = ({ title }: any) => {
           data-aos-duration="1500"
         >
           <Link href="index">Home</Link>
+          {isService && <span>
+            <i className="fa-regular fa-angles-right mx-2"></i>
+            <Link href={'/service'}>Services</Link>
+          </span>}
           <span>
             <i className="fa-regular fa-angles-right mx-2"></i>
             {title}
