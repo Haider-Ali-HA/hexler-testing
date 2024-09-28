@@ -11,7 +11,7 @@ const page = () => {
     <div>
       <TopHeader />
       <Header />
-      <CmnBanner title="Out Team" />
+      <CmnBanner title="Our Team" />
       <TeamItems />
       <Footer />
       <CustomCursor />

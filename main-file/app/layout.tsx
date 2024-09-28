@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/public/styles/style.scss";
 import InitAnimations from "@/components/layout/InitAnimations";
+import "@/public/styles/customStyles.css"
 
 export const metadata: Metadata = {
   title: "Hexler Tech | Software Development & IT Solutions",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   ],
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,6 +33,8 @@ export default function RootLayout({
       <body >
         {children}
         <InitAnimations />
+        
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </body>
     </html>
   );

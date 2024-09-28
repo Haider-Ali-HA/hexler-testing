@@ -127,7 +127,7 @@ const BannerTwo = () => {
                   <Link
                     data-animation="fadeInUp"
                     data-delay="1s"
-                    href="about"
+                    href="about-us"
                     className="btn-one mt-50"
                   >
                     Explore More{" "}
@@ -226,7 +226,7 @@ const BannerTwo = () => {
                   <Link
                     data-animation="fadeInUp"
                     data-delay="1s"
-                    href="about"
+                    href="about-us"
                     className="btn-one mt-50"
                   >
                     Explore More{" "}
@@ -325,7 +325,7 @@ const BannerTwo = () => {
                   <Link
                     data-animation="fadeInUp"
                     data-delay="1s"
-                    href="about"
+                    href="about-us"
                     className="btn-one mt-50"
                   >
                     Explore More{" "}

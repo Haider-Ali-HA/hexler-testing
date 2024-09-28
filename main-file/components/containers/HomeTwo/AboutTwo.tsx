@@ -140,7 +140,7 @@ const AboutTwo = () => {
               data-aos-delay="400"
               data-aos-duration="1500"
             >
-              <Link href="about" className="btn-one">
+              <Link href="about-us" className="btn-one">
                 About Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
               <Image src={Seven} alt="singature" priority />

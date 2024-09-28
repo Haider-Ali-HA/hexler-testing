@@ -414,7 +414,7 @@
   right: 0px;
   width: 400px;
   height: 100%;
-  background-color: var(--heading-color);
+  background-color: var(--primary-color);
   padding: 40px;
   padding-top: 30px;
   z-index: 9999;
@@ -469,11 +469,11 @@
     a {
       @include radius(40px, 40px, 40px);
       border: 1px solid rgba(255, 255, 255, 0.25);
-      color: var(--primary-color); //orignal
+      color: var(--heading-color); //orignal
       // color: var(--secondary-color); //modified
       margin-right: 10px;
       &:hover {
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         color: var(--heading-color); //orignal: heading-color
         // color: var(--secondary-color); //orignal: heading-color
         border: 1px solid var(--primary-color); 

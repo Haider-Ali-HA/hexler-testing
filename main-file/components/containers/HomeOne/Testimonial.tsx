@@ -22,7 +22,8 @@ const Testimonial = () => {
       <div className="container">
         <div className="row g-4">
           {/* <MiniContactForm /> */}
-          <CalendlyForm/>
+          <CalendlyForm />
+          {/* 
           <div className="col-lg-5 ps-2 ps-lg-5">
             <div className="section-header mb-40">
               <h5
@@ -170,6 +171,7 @@ const Testimonial = () => {
               </button>
             </div>
           </div>
+           */}
         </div>
       </div>
     </section>

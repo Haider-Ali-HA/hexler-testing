@@ -7,6 +7,7 @@ import Four from "@/public/images/shape/footer-solid-right.png";
 import Five from "@/public/images/shape/footer-shadow-shape.png";
 import Logo from "@/public/images/logo/logo.svg";
 
+
 const Footer = () => {
   return (
     <footer className="footer-area secondary-bg">
@@ -69,7 +70,11 @@ const Footer = () => {
               <Link href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
                 <i className="fa-brands fa-youtube"></i>
               </Link>
-            </div>
+            </div>            
+              <Link className="pl-10" href="https://www.trustpilot.com/review/hexlertech.com" target="_blank">
+              <i className="fa-star-sharp fa-regular"/> 
+              &nbsp;Trustpilot  
+              </Link>
           </div>
           <div
             className="footer__item item-sm "
@@ -120,7 +125,7 @@ const Footer = () => {
             <h3 className="footer-title">Quick Link</h3>
             <ul>
               <li>
-                <Link href="about">
+                <Link href="about-us">
                   <i className="fa-regular fa-angles-right me-1"></i> About
                   Hexler Tech
                 </Link>

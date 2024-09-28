@@ -1,0 +1,26 @@
+
+.second-section-header{
+    border-top: 1px solid #7a7486 !important;
+    font-size: 3.1rem;
+  }
+
+
+
+.second-section-card{
+    border-top: 1px solid #7a7486 !important;
+}
+
+
+.calendly-wrapper{
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow: hidden;
+    
+}
+
+
+.go2048136271{
+    display: none !important; 
+}

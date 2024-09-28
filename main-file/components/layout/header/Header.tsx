@@ -135,13 +135,13 @@ const Header = () => {
                           <h6 className="text-white">Home Dark</h6>
                         </div>
                       </li> */}
-                    {/* </ul>
+                    {/* </ul> 
                   </li> */}
                   <li>
-                    <Link href="about">About</Link>
+                    <Link href="about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/service">Services</Link>
+                    <Link href="/service">Our Services</Link>
                     <ul className="sub-menu">
                       <li>
                         <Link href="service-solutions">IT Solutions</Link>
@@ -149,12 +149,14 @@ const Header = () => {
                       <li>
                         <Link href="service">IT Services</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="service-details">Service Details</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
+
                   <li>
+
                     <Link href="/case">Pages</Link>
                     <ul className="sub-menu">
                       <li>
@@ -183,8 +185,16 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
+
                   <li>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="projects">Our Projects</Link>
+                  </li>
+                  <li>
+                    <Link href="team">Our Team</Link>
+                  </li>
+
+                  <li>
+                    <Link href="/blog">Blogs</Link>
                     <ul className="sub-menu">
                       <li>
                         <Link href="blog">Blog Grid</Link>
@@ -201,7 +211,7 @@ const Header = () => {
                     <Link href="contact">Contact</Link>
                   </li> */}
                   <li>
-                    <Link href="career">Career</Link>
+                    <Link href="careers">Careers</Link>
                   </li>
                   {/* <li className="ml-20 d-none d-lg-block">
                     <a className="search-trigger" onClick={handleSearch}>

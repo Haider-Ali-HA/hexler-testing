@@ -13,6 +13,9 @@ import Blog from "@/components/containers/HomeOne/Blog";
 import Footer from "@/components/layout/footer/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
+import SecondSection from "@/components/containers/HomeOne/SecondSection";
+import Script from "next/script";
+import Reviews from "@/components/layout/testimonial/Reviews";
 
 const page = () => {
   return (
@@ -20,7 +23,8 @@ const page = () => {
       <TopHeader />
       <Header />
       <Banner />
-      <Service />
+      {/* <Service /> */}
+      <SecondSection/>
       <About />
       <CounterSection />
       {/* <Case /> */}
@@ -29,6 +33,7 @@ const page = () => {
       <Process />
       <Testimonial />
       {/* <Blog /> */}
+      {/* <Reviews/> */}
       <Footer />
       <CustomCursor />
       <ScrollProgressButton />

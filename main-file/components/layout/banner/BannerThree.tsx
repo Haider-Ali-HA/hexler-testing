@@ -82,7 +82,7 @@ const BannerThree = () => {
                     className="btn-one mt-0"
                     data-aos="fade-up"
                     data-delay="1s"
-                    href="about"
+                    href="about-us"
                   >
                     Explore More{" "}
                     <i className="fa-regular fa-arrow-right-long"></i>

@@ -1,24 +1,21 @@
-/* Loading.css */
-@keyframes blink {
-    0%, 100% {
-      border-top-color: white;
+  .loader {
+    width: 40px; /* Size of the dot */
+    height: 40px; /* Size of the dot */
+    border-radius: 50%; /* Make it round */
+    background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */
+    animation: pulse 1.5s infinite; /* Animation effect */
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5); /* Blur effect */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
     }
     50% {
-      border-top-color: #3c72fc;
+      transform: scale(1.3); /* Expanding effect */
     }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid white; /* Blinking color */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite, blink 1s step-start infinite; /* Combined animations */
+    100% {
+      transform: scale(1);
+    }
   }
   

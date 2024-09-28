@@ -180,10 +180,10 @@ const Banner = () => {
                     data-animation="slideInRight"
                     data-duration="2s"
                     data-delay=".9s"
-                    href="about"
+                    href="projects"
                     className="btn-one mt-60"
                   >
-                    Explore More{" "}
+                    Our Projects{" "}
                     <i className="fa-regular fa-arrow-right-long"></i>
                   </Link>
                 </div>
@@ -327,10 +327,10 @@ const Banner = () => {
                     data-animation="slideInRight"
                     data-duration="2s"
                     data-delay=".9s"
-                    href="about"
+                    href="about-us"
                     className="btn-one mt-60"
                   >
-                    Explore More{" "}
+                    Our Projects{" "}
                     <i className="fa-regular fa-arrow-right-long"></i>
                   </Link>
                 </div>
@@ -476,10 +476,10 @@ const Banner = () => {
                     data-animation="slideInRight"
                     data-duration="2s"
                     data-delay=".9s"
-                    href="about"
+                    href="about-us"
                     className="btn-one mt-60"
                   >
-                    Explore More{" "}
+                    Our Projects{" "}
                     <i className="fa-regular fa-arrow-right-long"></i>
                   </Link>
                 </div>

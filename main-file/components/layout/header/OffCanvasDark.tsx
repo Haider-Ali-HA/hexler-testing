@@ -107,7 +107,7 @@ const OffCanvasDark = ({ toggleMenu, handleToggleMenu }: any) => {
               </ul>
             </li>
             <li>
-              <Link href="about">About</Link>
+              <Link href="about-us">About</Link>
             </li>
             <li>
               <a

@@ -62,14 +62,14 @@ const TopHeader = () => {
             </li>
           </ul>
           <ul className="link-info">
-            <li>
+            {/* <li>
               <Link href="/">
                 <i className="fa-brands fa-facebook-f"></i>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/">
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
               </Link>
             </li>
             <li>

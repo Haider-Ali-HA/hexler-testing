@@ -124,7 +124,7 @@ const FooterTwo = () => {
             <h3 className="footer-title">Quick Link</h3>
             <ul>
               <li>
-                <Link href="about">
+                <Link href="about-us">
                   <i className="fa-regular fa-angles-right me-1"></i> About
                   Gratech
                 </Link>
