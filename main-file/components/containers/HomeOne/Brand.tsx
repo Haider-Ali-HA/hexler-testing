@@ -12,18 +12,18 @@ import Four from "@/public/images/brand/nimbus-2.png";
 const Brand = () => {
   return (
     <div className="brand-area" >
-      <div className="container"  style={{padding:0,margin:0,maxWidth:'100%'}} >
+      <div className="container" style={{ padding: 0, margin: 0, maxWidth: '100%' }} >
         <div className="brand__wrp">
           <div className="brand__shape">
             {/* <Image src={Shape} alt="Image" priority /> */}
           </div>
           <div className="swiper brand__slider">
-          <Swiper
+            <Swiper
               slidesPerView={2}
               spaceBetween={30}
               freeMode={true}
-              speed={600} 
-              loop={true} 
+              speed={600}
+              loop={true}
               modules={[Autoplay]}
               autoplay={{
                 delay: 2000, // Time before switching to the next slide
@@ -43,56 +43,56 @@ const Brand = () => {
               className="swiper-wrapper"
             >
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={One} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Two} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Three} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Four} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={One} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Two} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Three} alt="Image" priority />
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={Four} alt="Image" priority />
                   </div>

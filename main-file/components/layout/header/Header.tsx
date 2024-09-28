@@ -155,7 +155,7 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  <li>
+                  {/* <li>
 
                     <Link href="/case">Pages</Link>
                     <ul className="sub-menu">
@@ -184,7 +184,7 @@ const Header = () => {
                         <Link href="error">404 Error</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
 
                   <li>
                     <Link href="projects">Our Projects</Link>

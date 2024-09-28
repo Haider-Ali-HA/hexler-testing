@@ -25,7 +25,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Saif Ur Rehman Orakzai
                   </Link>
                 </h4>
@@ -68,7 +68,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Sohaib Ahmed Sipra
                   </Link>
                 </h4>
@@ -111,7 +111,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Hassan Naveed Khan
                   </Link>
                 </h4>
@@ -154,7 +154,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Sohail Khan
                   </Link>
                 </h4>
@@ -197,7 +197,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Musa Haroon
                   </Link>
                 </h4>
@@ -240,7 +240,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Haadiya Sajid
                   </Link>
                 </h4>
@@ -283,7 +283,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Moiz Akhter
                   </Link>
                 </h4>
@@ -326,7 +326,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Aazan Shami
                   </Link>
                 </h4>
@@ -369,7 +369,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Yousuf Khan
                   </Link>
                 </h4>
@@ -412,7 +412,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Hadeed
                   </Link>
                 </h4>
@@ -455,7 +455,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Fatima Sarmad
                   </Link>
                 </h4>
@@ -498,7 +498,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Muhammad Mehdi Ali
                   </Link>
                 </h4>
@@ -541,7 +541,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Asif Hamdaani
                   </Link>
                 </h4>
@@ -584,7 +584,7 @@ const TeamItems = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                   Mudassir
                   </Link>
                 </h4>

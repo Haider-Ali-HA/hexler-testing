@@ -65,7 +65,7 @@ const Team = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Saif Ur Rehman Orakzai
                   </Link>
                 </h4>
@@ -107,7 +107,7 @@ const Team = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href=" ">
                     Sohaib Ahmed Sipra
                   </Link>
                 </h4>
@@ -149,7 +149,7 @@ const Team = () => {
               </div>
               <div className="team__content">
                 <h4>
-                  <Link className="text-white" href="team-details">
+                  <Link className="text-white" href="">
                     Hassan Naveed Khan
                   </Link>
                 </h4>
