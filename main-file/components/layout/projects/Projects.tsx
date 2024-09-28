@@ -54,7 +54,7 @@ const Projects = () => {
                     <div className="career-title" >
                         <div className="career-title-text">
                             <h2 className=" career-heading" style={{ fontSize: '3.5rem', lineHeight: '1' }}>
-                            A Glimpse Into Hexler Tech's Digital Journey
+                            A Glimpse Into Hexler Tech&apos;s Digital Journey
                             </h2>
                         </div>
                     </div>

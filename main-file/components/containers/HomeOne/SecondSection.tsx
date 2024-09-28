@@ -11,7 +11,7 @@ const SecondSection = () => {
                             <h2
                                 className="second-section-header pt-2 "
                             >
-                                We don't hide,we stand tall in front of challenges, guiding you through the Digital World.
+                                We don&apos;t hide, we stand tall in front of challenges, guiding you through the Digital World.
                             </h2>
                         </div>
                     </div>
