@@ -283,7 +283,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                     <div className="flex flex-col items-center w-full gap-10 mt-5">
                         <div className="flex flex-col">
                             <h1 className="completed-title">Application Submitted Successfully</h1>
-                            <pre>{JSON.stringify(formData, null, 2)}</pre>
+                            {/* <pre>{JSON.stringify(formData, null, 2)}</pre> */}
                         </div>
                     </div>
                 </div>

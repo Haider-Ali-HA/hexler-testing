@@ -138,16 +138,16 @@ const Header = () => {
                     {/* </ul> 
                   </li> */}
                   <li>
-                    <Link href="about-us">About Us</Link>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li>
                     <Link href="/service">Our Services</Link>
                     <ul className="sub-menu">
                       <li>
-                        <Link href="service-solutions">IT Solutions</Link>
+                        <Link href="/service-solutions">IT Solutions</Link>
                       </li>
                       <li>
-                        <Link href="service">IT Services</Link>
+                        <Link href="/service">IT Services</Link>
                       </li>
                       {/* <li>
                         <Link href="service-details">Service Details</Link>
@@ -187,13 +187,13 @@ const Header = () => {
                   </li> */}
 
                   <li>
-                    <Link href="projects">Our Projects</Link>
+                    <Link href="/projects">Our Projects</Link>
                   </li>
                   <li>
-                    <Link href="team">Our Team</Link>
+                    <Link href="/team">Our Team</Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link href="/blog">Blogs</Link>
                     <ul className="sub-menu">
                       <li>
@@ -206,12 +206,12 @@ const Header = () => {
                         <Link href="blog-details">Blog Details</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <Link href="contact">Contact</Link>
                   </li> */}
                   <li>
-                    <Link href="careers">Careers</Link>
+                    <Link href="/careers">Careers</Link>
                   </li>
                   {/* <li className="ml-20 d-none d-lg-block">
                     <a className="search-trigger" onClick={handleSearch}>
@@ -240,7 +240,7 @@ const Header = () => {
               </nav>
             </div>
             <div className="d-none d-lg-inline-block">
-              <Link href="contact" className="btn-one">
+              <Link href="/contact" className="btn-one">
                 Contact Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
             </div>

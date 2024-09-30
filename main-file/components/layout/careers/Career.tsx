@@ -66,9 +66,9 @@ const Career = () => {
                                     {item.description}
                                 </p>
                                 <div className="view-job-listing-wrapper">
-                                 <p className="view-job-listings" onClick={() => setShow(true)}>
+                                 <div  className="view-job-listings" onClick={() => setShow(true)}>
                                     Apply Now<MdArrowForward className="ml-2" />
-                                </p>
+                                </div>
                                 </div>
                             </div>
                         ))}
