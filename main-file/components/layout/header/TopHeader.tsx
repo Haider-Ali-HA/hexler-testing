@@ -68,17 +68,17 @@ const TopHeader = () => {
               </Link>
             </li> */}
             <li>
-              <Link href="/">
+              <Link target="_blank" href="https://www.instagram.com/hexlertech/">
                 <i className="fa-brands fa-instagram"></i>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link target="_blank" href="https://www.linkedin.com/company/hexler-tech/l">
                 <i className="fa-brands fa-linkedin-in"></i>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link target="_blank" href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
                 <i className="fa-brands fa-youtube"></i>
               </Link>
             </li>

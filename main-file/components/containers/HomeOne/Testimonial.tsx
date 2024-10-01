@@ -3,11 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import Title from "@/public/images/icon/section-title.png";
-import One from "@/public/images/testimonial/testimonial-image1.png";
-import Two from "@/public/images/testimonial/testimonial-image2.png";
-import MiniContactForm from "@/components/layout/MiniContactForm";
 import CalendlyForm from "@/components/layout/CalendlyForm";
+import Four from "@/public/images/icon/section-title.png";
 
 
 const Testimonial = () => {
@@ -20,6 +17,26 @@ const Testimonial = () => {
       id="testimonial-section"
     >
       <div className="container">
+        <div className="row mb-3">
+        <div className="section-header">
+            <h5
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1500"
+            >
+              <Image className="me-1" src={Four} alt="icon" priority />
+              Let&apos;s Collaborate
+            </h5>
+            <h2
+              className="text-white "
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1500"
+            >
+              Set Your Meeting Time
+            </h2>
+          </div>
+        </div>
         <div className="row g-4">
           {/* <MiniContactForm /> */}
           <CalendlyForm />

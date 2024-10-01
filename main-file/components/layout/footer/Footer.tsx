@@ -61,20 +61,22 @@ const Footer = () => {
               We are a team of talented software developers, designers, and marketing experts who are passionate about helping businesses grow.
             </p>
             <div className="social-icon">
-              <Link href="https://www.instagram.com/hexlertech/">
+              <Link target="_blank" href="https://www.instagram.com/hexlertech/">
                 <i className="fa-brands fa-instagram"></i>
               </Link>
-              <Link href="https://pk.linkedin.com/company/hexler-tech">
+              <Link target="_blank" href="https://www.linkedin.com/company/hexler-tech/l">
                 <i className="fa-brands fa-linkedin-in"></i>
               </Link>
-              <Link href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
+              <Link target="_blank" href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
                 <i className="fa-brands fa-youtube"></i>
               </Link>
-            </div>            
-              <Link className="pl-10" href="https://www.trustpilot.com/review/hexlertech.com" target="_blank">
-              <i className="fa-star-sharp fa-regular"/> 
-              &nbsp;Trustpilot  
+            </div>
+            <div className="social-icon-2 ">
+              <Link style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="" href="https://www.trustpilot.com/review/hexlertech.com" target="_blank">
+                <i className="fa-star-sharp fa-regular"></i>
+                <p style={{paddingLeft:'0.2rem'}}>&nbsp;Trustpilot  </p>
               </Link>
+            </div>
           </div>
           <div
             className="footer__item item-sm "
@@ -163,6 +165,7 @@ const Footer = () => {
           >
             <h3 className="footer-title">Contact Us</h3>
             <p className="mb-20">
+              Glen Allen, VA 23060, USA <br />
               Islamabad, Pakistan
             </p>
             <ul className="footer-contact">

@@ -26,10 +26,10 @@ const TeamItems = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href=" ">
-                  Saif Ur Rehman Orakzai
+                  Saif Orakzai
                   </Link>
                 </h4>
-                <span className="text-white"></span>
+                <span className="text-white">CEO</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -545,7 +545,7 @@ const TeamItems = () => {
                   Asif Hamdaani
                   </Link>
                 </h4>
-                <span className="text-white">GM</span>
+                <span className="text-white">General Manager</span>
               </div>
               <div className="team__share">
                 <ul>
@@ -588,7 +588,7 @@ const TeamItems = () => {
                   Mudassir
                   </Link>
                 </h4>
-                <span className="text-white">GM</span>
+                <span className="text-white">General Manager</span>
               </div>
               <div className="team__share">
                 <ul>

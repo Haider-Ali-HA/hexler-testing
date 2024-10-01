@@ -16,6 +16,7 @@ import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import SecondSection from "@/components/containers/HomeOne/SecondSection";
 import Script from "next/script";
 import Reviews from "@/components/layout/testimonial/Reviews";
+import CounterSection2 from "@/components/containers/HomeOne/CounterSection2";
 
 const page = () => {
   return (
@@ -26,7 +27,7 @@ const page = () => {
       {/* <Service /> */}
       <SecondSection/>
       <About />
-      <CounterSection />
+      <CounterSection2 />
       {/* <Case /> */}
       <Offer />
       <Brand />

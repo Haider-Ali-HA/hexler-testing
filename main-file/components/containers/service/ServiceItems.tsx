@@ -33,7 +33,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/web-development" className="primary-hover">
+                  <Link href="/service/web-development" className="primary-hover">
                     Web Development
                   </Link>
                 </h4>
@@ -41,7 +41,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/web-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
@@ -61,7 +61,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/app-development" className="primary-hover">
+                  <Link href="/service/app-development" className="primary-hover">
                     Mobile App Development
                   </Link>
                 </h4>
@@ -69,7 +69,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/app-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
@@ -89,7 +89,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/ui-ux-design" className="primary-hover">
+                  <Link href="/service/ui-ux-design" className="primary-hover">
                     UI/UX Design
                   </Link>
                 </h4>
@@ -97,7 +97,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/ui-ux-design">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
@@ -117,7 +117,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/software-testing" className="primary-hover">
+                  <Link href="/service/software-testing" className="primary-hover">
                     Software Testing and QA
                   </Link>
                 </h4>
@@ -125,7 +125,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/software-testing">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
@@ -146,7 +146,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/devops" className="primary-hover">
+                  <Link href="/service/devops" className="primary-hover">
                     DevOps Solutions
                   </Link>
                 </h4>
@@ -154,7 +154,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/devops">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
@@ -175,7 +175,7 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="service/game-development" className="primary-hover">
+                  <Link href="/service/game-development" className="primary-hover">
                     Game Development
                   </Link>
                 </h4>
@@ -183,7 +183,7 @@ const ServiceItems = () => {
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="service-details">
+                <Link className="read-more-btn" href="/service/game-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
                 </Link>
               </div>
