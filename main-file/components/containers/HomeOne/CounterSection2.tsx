@@ -6,17 +6,17 @@ import Three from "@/public/images/icon/counter-icon9.svg";
 
 const counters=[{
     icon: One,
-    count: "265",
+    count: "20+",
     label: "Qualified experts",
     description: "Agile Empowered Developers, Project Managers, Business Analysts, UX/UI Designers, and more!"
   }, {
     icon: Two,
-    count: "15+",
+    count: "5+",
     label: "Years of experience",
     description: "Empowering Your Vision with 15+ Years of IT Excellence."
   }, {
     icon: Three,
-    count: "2",
+    count: "3",
     label: "Development centers",
     description: "Double the Expertise, Double the Solutions: Two Development Centers, One Goal."
   }]
