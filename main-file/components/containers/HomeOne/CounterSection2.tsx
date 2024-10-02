@@ -13,7 +13,7 @@ const counters=[{
     icon: Two,
     count: "5+",
     label: "Years of experience",
-    description: "Empowering Your Vision with 15+ Years of IT Excellence."
+    description: "Empowering Your Vision with 5+ Years of IT Excellence."
   }, {
     icon: Three,
     count: "3",
