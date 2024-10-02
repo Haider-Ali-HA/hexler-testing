@@ -14,7 +14,7 @@ import Eleven from "@/public/images/icon/service-two-icon4.png";
 import Twelve from "@/public/images/icon/service-two-icon5.png";
 import Thirteen from "@/public/images/icon/service-two-icon6.png";
 
-const ServiceItems = () => {
+const   ServiceItems = () => {
   return (
     <section className="service-inner-area pt-120 pb-120">
       <div className="container">
@@ -33,17 +33,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/web-development" className="primary-hover">
+                  {/* <Link href="/service/web-development" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     Web Development
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/web-development">
+                {/* <Link className="read-more-btn" href="/service/web-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -61,17 +62,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/app-development" className="primary-hover">
+                  {/* <Link href="/service/app-development" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     Mobile App Development
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/app-development">
+                {/* <Link className="read-more-btn" href="/service/app-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -89,17 +91,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/ui-ux-design" className="primary-hover">
+                  {/* <Link href="/service/ui-ux-design" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     UI/UX Design
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/ui-ux-design">
+                {/* <Link className="read-more-btn" href="/service/ui-ux-design">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -117,17 +120,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/software-testing" className="primary-hover">
+                  {/* <Link href="/service/software-testing" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     Software Testing and QA
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/software-testing">
+                {/* <Link className="read-more-btn" href="/service/software-testing">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -146,17 +150,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/devops" className="primary-hover">
+                  {/* <Link href="/service/devops" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     DevOps Solutions
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/devops">
+                {/* <Link className="read-more-btn" href="/service/devops">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -175,17 +180,18 @@ const ServiceItems = () => {
                   <Image src={One} alt="shape" priority />
                 </div>
                 <h4>
-                  <Link href="/service/game-development" className="primary-hover">
+                  {/* <Link href="/service/game-development" className="primary-hover"> */}
+                  <div style={{cursor:'pointer'}}  className="primary-hover">
                     Game Development
-                  </Link>
+                  </div>
                 </h4>
                 <p>
                   Pellentesque nec the condimentum nec lorem nulla augue est
                   ultricies ac iaculis.
                 </p>
-                <Link className="read-more-btn" href="/service/game-development">
+                {/* <Link className="read-more-btn" href="/service/game-development">
                   Read More <i className="fa-regular fa-arrow-right-long"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

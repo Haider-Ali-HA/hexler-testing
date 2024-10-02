@@ -8,6 +8,7 @@ import Team from "@/components/containers/HomeTwo/Team";
 import Footer from "@/components/layout/footer/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
+import CounterSection2 from "@/components/containers/HomeOne/CounterSection2";
 
 const page = () => {
   return (
@@ -17,7 +18,8 @@ const page = () => {
       <CmnBanner title="IT Solutions" />
       <ServiceAlter />
       <About />
-      <CounterSection />
+      {/* <CounterSection /> */}
+      <CounterSection2 />
       <Team />
       <Footer />
       <CustomCursor />
