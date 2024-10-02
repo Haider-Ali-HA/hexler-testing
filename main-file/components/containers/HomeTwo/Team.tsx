@@ -66,7 +66,7 @@ const Team = () => {
               <div className="team__content">
                 <h4>
                   <Link className="text-white" href=" ">
-                    Saif Ur Rehman Orakzai
+                    Saif Orakzai
                   </Link>
                 </h4>
                 <span className="text-white">CEO</span>
