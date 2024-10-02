@@ -36,10 +36,10 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
       <Link href="/" className="logo mb-40">
         <Image src={svgLogo} alt="logo" />
       </Link>
-      <div className="sidebar__search mb-30">
+      {/* <div className="sidebar__search mb-30">
         <input type="text" placeholder="Search..." />
         <i className="fa-regular fa-magnifying-glass"></i>
-      </div>
+      </div> */}
       <div className="mobile-menu overflow-hidden">
         <nav className="mean-nav">
           <ul>
@@ -186,30 +186,27 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
         </nav>
       </div>
       <ul className="info pt-40">
-        <li>
+        {/* <li>
           <i className="fa-solid primary-color fa-location-dot"></i>{" "}
-          <Link href="/">example@example.com</Link>
-        </li>
+          <Link href="/">hexler@example.com</Link>
+        </li> */}
         <li className="py-2">
           <i className="fa-solid primary-color fa-phone-volume"></i>{" "}
-          <Link href="tel:+208-6666-0112">+208-6666-0112</Link>
+          <Link href="tel:(302)-303-4286">(302)-303-4286 </Link>
         </li>
         <li>
           <i className="fa-solid primary-color fa-paper-plane"></i>{" "}
-          <Link href="/">info@example.com</Link>
+          <Link href="/">hexlertech@gmail.com</Link>
         </li>
       </ul>
       <div className="social-icon mt-20">
-        <Link href="/">
-          <i className="fa-brands fa-facebook-f"></i>
+        <Link  target="_blank" href="https://www.instagram.com/hexlertech/">
+          <i className="fa-brands fa-instagram"></i>
         </Link>
-        <Link href="/">
-          <i className="fa-brands fa-twitter"></i>
-        </Link>
-        <Link href="/">
+        <Link target="_blank" href="https://www.linkedin.com/company/hexler-tech/l">
           <i className="fa-brands fa-linkedin-in"></i>
         </Link>
-        <Link href="/">
+        <Link target="_blank" href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
           <i className="fa-brands fa-youtube"></i>
         </Link>
       </div>
