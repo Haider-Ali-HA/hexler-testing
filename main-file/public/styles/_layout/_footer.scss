@@ -9,7 +9,7 @@
 		position: relative;
 		@include justify-wrp;
 		gap: 30px;
-
+		align-items: start !important;
 		@include breakpoint(max-sm) {
 			flex-direction: column;
 			justify-content: left;
@@ -136,7 +136,7 @@
 			border-radius: 0;
 			width: 7.7rem !important;
 			padding: 1rem;
-			padding-left: 2px;
+			padding-left: 1rem;
 			&:hover {
 				background-color: var(--primary-color);
 			}

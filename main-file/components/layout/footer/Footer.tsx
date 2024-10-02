@@ -164,11 +164,20 @@ const Footer = () => {
             data-aos-duration="1500"
           >
             <h3 className="footer-title">Contact Us</h3>
-            <p className="mb-20">
+
+            {/* <p className="mb-20">
               Glen Allen, VA 23060, USA <br />
               Islamabad, Pakistan
-            </p>
+            </p> */}
             <ul className="footer-contact">
+            <li>
+                <i className="fa-regular fa-location-check"></i>
+                <div className="info">
+                  <p>Glen Allen, VA 23060, USA <br />
+                  Islamabad, Pakistan</p>
+                </div>
+              </li>
+
               <li>
                 <i className="fa-regular fa-clock"></i>
                 <div className="info">
@@ -176,11 +185,12 @@ const Footer = () => {
                   <p>Mon - Sat: 10.00 AM - 7.00 PM</p>
                 </div>
               </li>
+              
               <li>
                 <i className="fa-duotone fa-phone"></i>
                 <div className="info">
                   <h5>Phone Call:</h5>
-                  <p>(302)-303-4286, +92-344-9200674</p>
+                  <p>(302)-303-4286 <br />+92-344-9200674</p>
                 </div>
               </li>
             </ul>
