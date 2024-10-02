@@ -18,7 +18,7 @@ const counters=[{
     icon: Three,
     count: "3",
     label: "Development centers",
-    description: "Double the Expertise, Double the Solutions: Two Development Centers, One Goal."
+    description: "Triple the Expertise, Triple the Solutions: Three Development Centers, One Goal."
   }]
 
 const CounterSection2 = () => {
