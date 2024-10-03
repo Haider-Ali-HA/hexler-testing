@@ -18,8 +18,7 @@ interface FormData {
     email: string;
     address: string;
     city: string;
-    experience: string;
-    education: string;
+    projectLinks: string;
     linkedin: string;
     github: string;
     resume: File | null;
@@ -29,22 +28,51 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
     const [formData, setFormData] = useState<FormData>({
         firstName: '',
         lastName: '',
-        gender: '',
+        gender: 'male',
         dob: '',
         phone: '',
         email: '',
         address: '',
         city: '',
-        experience: '',
-        education: '',
+        projectLinks: '',
         linkedin: '',
         github: '',
         resume: null,
     });
+    const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+    const [isLinkedInValid, setIsLinkedInValid] = useState<boolean>(true);
+    const [isGitHubValid, setIsGitHubValid] = useState<boolean>(true);
+
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+    
+        // Validate based on the field being changed
+        switch (name) {
+            case 'email':
+                setIsEmailValid(validateEmail(value));
+                break;
+            case 'linkedin':
+                setIsLinkedInValid(validateLinkedIn(value));
+                break;
+            case 'github':
+                setIsGitHubValid(validateGitHub(value));
+                break;
+            default:
+                break;
+        }
+    };
+
+    
+    const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleChangeGender = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const { value } = e.target;
+        setFormData({ ...formData, gender: value });
     };
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,33 +84,54 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         }
     };
 
+
+    const validateEmail = (email: string) => {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    };
+
+    const validateLinkedIn = (url: string) => {
+        const linkedInPattern = /^(https?:\/\/)?(www\.)?(linkedin\.com\/in\/)[a-zA-Z0-9_-]+/;
+        return linkedInPattern.test(url);
+    };
+
+    const validateGitHub = (url: string) => {
+        const githubPattern = /^(https?:\/\/)?(www\.)?(github\.com\/)[a-zA-Z0-9_-]+/;
+        return githubPattern.test(url);
+    };
+
+
+
+
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         // Checking for required fields
         for (const key in formData) {
+            if(key!='projectLinks'){
             if (formData[key as keyof FormData] === '') {
                 alert(`${key} is required`);
                 return;
             }
         }
+        }
         console.log("Submitted Data:", formData);
         setFormData({
             firstName: '',
             lastName: '',
-            gender: '',
+            gender: 'male',
             dob: '',
             phone: '',
             email: '',
             address: '',
             city: '',
-            experience: '',
-            education: '',
+            projectLinks: '',
             linkedin: '',
             github: '',
             resume: null,
         });
-            
+
         setShowCompleted(true);
         setShow(false);
     };
@@ -94,7 +143,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
 
             <div className={`modal ${show ? 'showBlock' : 'showHidden'}`}>
                 <div className="modal-header">
-                    <h2>Apply for Truck Operator</h2>
+                    <h2>Apply Here!</h2>
                     <AiOutlineClose onClick={() => setShow(false)} />
                 </div>
                 <form className="modal-body" onSubmit={handleSubmit}>
@@ -127,15 +176,17 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                     <div className="input-group">
                         <div className="input-column">
                             <label>Gender</label>
-                            <input
-                                type="text"
+                            <select
                                 name="gender"
-                                className="input"
-                                placeholder="Enter Gender"
+                                className="input" // Added className for consistency
                                 value={formData.gender}
-                                onChange={handleChange}
+                                onChange={handleChangeGender}
                                 required
-                            />
+                            >
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                         <div className="input-column">
                             <label>DOB</label>
@@ -163,16 +214,20 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                             />
                         </div>
                         <div className="input-column">
-                            <label>Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                className="input"
-                                placeholder="Enter Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                            />
+                            <div className="input-column">
+                                <label>Email</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    className={`input ${!isEmailValid ? 'input-error' : ''}`} // Add error class
+                                    placeholder="Enter Email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
+                                {!isEmailValid && <p className="error-message">Invalid email format.</p>} {/* Error message */}
+                            </div>
+
                         </div>
                     </div>
                     <div className="input-group">
@@ -202,7 +257,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                         </div>
                     </div>
                     <div className="input-group">
-                        <div className="input-column">
+                        {/* <div className="input-column">
                             <label>Experience</label>
                             <input
                                 type="text"
@@ -214,7 +269,18 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                                 required
                             />
                         </div>
+                        {/* <div className="input-column"> */}
                         <div className="input-column">
+                            <label>Project Links</label>
+                            <textarea
+                                name="projectLinks"
+                                style={{ width: '100%', color: 'black' }}
+                                placeholder="Enter Experience"
+                                value={formData.projectLinks}
+                                onChange={handleChangeTextArea}
+                            />
+                        </div>
+                        {/* <div className="input-column">
                             <label>Education</label>
                             <input
                                 type="text"
@@ -225,32 +291,34 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                                 onChange={handleChange}
                                 required
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="input-group">
                         <div className="input-column">
-                            <label>LinkedIn</label>
+                            <label>LinkedIn Profile</label>
                             <input
                                 type="text"
                                 name="linkedin"
-                                className="input"
+                                className={`input ${!isLinkedInValid ? 'input-error' : ''}`} // Add error class
                                 placeholder="Enter your LinkedIn"
                                 value={formData.linkedin}
                                 onChange={handleChange}
                                 required
                             />
+                            {!isLinkedInValid && <p className="error-message">Invalid LinkedIn URL.</p>} {/* Error message */}
                         </div>
                         <div className="input-column">
-                            <label>GitHub</label>
+                            <label>GitHub Profile</label>
                             <input
                                 type="text"
                                 name="github"
-                                className="input"
+                                className={`input ${!isGitHubValid ? 'input-error' : ''}`} // Add error class
                                 placeholder="Enter your GitHub"
                                 value={formData.github}
                                 onChange={handleChange}
                                 required
                             />
+                            {!isGitHubValid && <p className="error-message">Invalid GitHub URL.</p>} {/* Error message */}
                         </div>
                     </div>
 

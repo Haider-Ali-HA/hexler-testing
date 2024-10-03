@@ -3,33 +3,7 @@ import React, { useState } from 'react';
 import { MdArrowForward } from 'react-icons/md';
 import '@/public/styles/career.css'
 import ModalComponent from './Modal';
-
-const data = [
-    {
-        name: "Software Developer",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlknnknnnkn nnnnnnnnnnnnnn nlkjijpij"
-    },
-    {
-        name: "Frontend Developer",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlknnk nnnknnnnnn nnnnnnnnnnl kjijpij"
-    },
-    {
-        name: "Junior Software Developer",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlkn nknnnknnnnnnn nnnnnnnnnlkjijpij"
-    },
-    {
-        name: "Backend Developer",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlknnknn  nknnnnnnnn nnnnnnnnlkjijpij"
-    },
-    {
-        name: "Database Administrator",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlkn nknnn knnnnnnsdfas nnnlskdnfknnnnnnnlkjijpij"
-    },
-    {
-        name: "DevOps Engineer",
-        description: "lklklljn knk nlkdnflkn ldfn ldnf lndlkn lkdnfn knlknnknnnknn nnnnnnnnnn nnnnlkjijpij"
-    },
-];
+import {jobsData} from '@/constants/jobsData';
 
 const Career = () => {
     const [show, setShow] = useState(false);
@@ -55,7 +29,7 @@ const Career = () => {
                     </div>
 
                     <div className="job-listings">
-                        {data.map((item, index) => (
+                        {jobsData.map((item, index) => (
                             <div key={index} className="job-card">
                                 {/* <div className="new-listings-badge">
                                     <p className="text-yellow-500 text-sm">5 new listings</p>

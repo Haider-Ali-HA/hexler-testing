@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/public/styles/style.scss";
 import InitAnimations from "@/components/layout/InitAnimations";
+import {Toaster} from 'react-hot-toast';
 import "@/public/styles/customStyles.css"
 
 export const metadata: Metadata = {
@@ -35,6 +36,8 @@ export default function RootLayout({
         <InitAnimations />
         
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <Toaster/>
       </body>
     </html>
   );

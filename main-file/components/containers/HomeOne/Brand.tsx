@@ -8,6 +8,13 @@ import One from "@/public/images/brand/soft-swirl.png";
 import Two from "@/public/images/brand/churn-station.png";
 import Three from "@/public/images/brand/nstp.png";
 import Four from "@/public/images/brand/nimbus-2.png";
+import Five from "@/public/images/brand/Paychex-White.svg";
+import Six from "@/public/images/brand/State_Greenhouse-White__1_.svg";
+import Seven from "@/public/images/brand/State_ICIMS-White.svg";
+import Eight from "@/public/images/brand/State_UKG-white.svg";
+import Nine from "@/public/images/brand/Workday-White.svg";
+import Ten from "@/public/images/brand/State_SmartRecruiters-White.svg";
+import Eleven from "@/public/images/brand/State_Tenstreet-White.svg";
 
 const Brand = () => {
   return (
@@ -42,7 +49,7 @@ const Brand = () => {
               }}
               className="swiper-wrapper"
             >
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="brand__image image">
                     <Image src={One} alt="Image" priority />
@@ -97,7 +104,58 @@ const Brand = () => {
                     <Image src={Four} alt="Image" priority />
                   </div>
                 </div>
+              </SwiperSlide> */}
+
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Five} alt="Image" priority />
+                  </div>
+                </div>
               </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Six} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Seven} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Eight} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Nine} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Ten} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="brand__image image">
+                    <Image src={Eleven} alt="Image" priority />
+                  </div>
+                </div>
+              </SwiperSlide>
+
             </Swiper>
           </div>
         </div>

@@ -1,8 +1,41 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import One from "@/public/images/icon/section-title.png";
+import { useState } from "react";
+import toast from 'react-hot-toast';
+
+
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 
 const ContactContent = () => {
+  const [formData, setFormData] =  useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    toast.success('Submitted successfully! Thank you for contacting us!',{
+      duration:2500
+    });
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    console.log(formData);
+  };
+
   return (
     <section className="contact-area pt-120 pb-120">
       <div className="container">
@@ -38,7 +71,7 @@ const ContactContent = () => {
                     <span className="text-white">Call Us 7/24</span>
                     <h3 className="mt-1">
                       <Link className="text-white" href="tel:+2085550112">
-                       (302)-303-4286
+                        (302)-303-4286
                       </Link>
                     </h3>
                   </div>
@@ -110,14 +143,14 @@ const ContactContent = () => {
               </ul>
               <h4 className="text-white mb-20">Follow Social:</h4>
               <div className="social">
-                <Link href="/">
-                  <i className="fa-brands fa-facebook-f"></i>
+                <Link target="_blank" href="https://www.instagram.com/hexlertech/">
+                  <i className="fa-brands fa-instagram"></i>
                 </Link>
-                <Link href="/">
-                  <i className="fa-brands fa-twitter"></i>
-                </Link>
-                <Link href="/">
+                <Link target="_blank" href="https://www.linkedin.com/company/hexler-tech/l">
                   <i className="fa-brands fa-linkedin-in"></i>
+                </Link>
+                <Link target="_blank" href="https://www.youtube.com/channel/UCoBpUgogxLVVF4YeAsOs0DQ">
+                  <i className="fa-brands fa-youtube"></i>
                 </Link>
               </div>
             </div>
@@ -154,7 +187,7 @@ const ContactContent = () => {
                 </p>
               </div>
               <div className="contact__form">
-                <form action="#">
+              <form action="#" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-6">
                       <label htmlFor="name">Your Name*</label>
@@ -163,6 +196,8 @@ const ContactContent = () => {
                         className="bg-transparent bor"
                         type="text"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       />
                     </div>
                     <div className="col-6">
@@ -172,7 +207,10 @@ const ContactContent = () => {
                         id="email"
                         type="email"
                         placeholder="Your Email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       />
+
                     </div>
                   </div>
                   <div className="text-area">
@@ -181,15 +219,19 @@ const ContactContent = () => {
                       className="bg-transparent bor"
                       id="massage"
                       placeholder="Write Message"
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     ></textarea>
+
                   </div>
                   <div className="btn-two">
                     <span className="btn-circle"></span>
-                    <Link href="/" className="btn-one">
+                    <button type="submit" className="btn-one">
                       Send Message{" "}
                       <i className="fa-regular fa-arrow-right-long"></i>
-                    </Link>
+                    </button>
                   </div>
+
                 </form>
               </div>
             </div>

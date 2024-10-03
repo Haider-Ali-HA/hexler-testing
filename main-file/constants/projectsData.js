@@ -4,7 +4,7 @@ export const projectsData = [
         description: "Developed xyz",
         path: "#",
         image: "",
-        categories: ["Full Stack", "MERN"]
+        categories: ["Full Stack"]
     },
     {
         name: "NSTP",
@@ -18,7 +18,7 @@ export const projectsData = [
         description: "Built a tool xyz",
         path: "#",
         image: "/images/projects/churn-station.png",
-        categories: ["MERN", "App Dev"]
+        categories: ["App Dev"]
     },
     {
         name: "Project X",
@@ -39,7 +39,7 @@ export const projectsData = [
         description: "Developed a mobile application.",
         path: "#",
         image: "",
-        categories: ["App Dev", "MERN"]
+        categories: ["App Dev"]
     },
     {
         name: "E-Learning Platform",
@@ -60,14 +60,14 @@ export const projectsData = [
         description: "Developed a task management mobile app.",
         path: "#",
         image: "",
-        categories: ["MERN", "App Dev"]
+        categories: ["App Dev"]
     },
     {
         name: "E-commerce Dashboard",
         description: "Created an analytics dashboard for e-commerce.",
         path: "#",
         image: "",
-        categories: ["Full Stack", "MERN"]
+        categories: ["Full Stack"]
     },
     {
         name: "Real Estate Website",
@@ -75,5 +75,19 @@ export const projectsData = [
         path: "#",
         image: "",
         categories: ["WordPress", "Full Stack"]
+    },
+    {
+        name: "Chatbot",
+        description: "Developed a custom trained chatbot for a medical company.",
+        path: "#",
+        image: "",
+        categories: ["AI Dev", "Full Stack"]
+    },
+    {
+        name: "Sales Insights Dashboard",
+        description: "Built a data analytics dashboard to visualize sales performance and trends.",
+        path: "#",
+        image: "",
+        categories: ["Data Analytics", "Full Stack"]
     }
 ];

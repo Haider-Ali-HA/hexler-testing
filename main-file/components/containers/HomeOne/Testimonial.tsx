@@ -10,7 +10,7 @@ import Four from "@/public/images/icon/section-title.png";
 const Testimonial = () => {
   return (
     <section
-      className="testimonial-area bg-image pt-120 pb-120"
+      className="testimonial-area bg-image pt-120 pb-110"
       style={{
         // backgroundImage: "url(/images/bg/testimonial-bg.png)",
       }}

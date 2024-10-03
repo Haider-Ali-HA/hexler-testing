@@ -34,7 +34,7 @@ const page = () => {
       <Process />
       <Testimonial />
       {/* <Blog /> */}
-      {/* <Reviews/> */}
+      <Reviews/>
       <Footer />
       <CustomCursor />
       <ScrollProgressButton />

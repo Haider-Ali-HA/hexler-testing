@@ -46,7 +46,7 @@ const CounterSection2 = () => {
               <Image  width={110} src={item.icon} alt="icon" priority />
               <div style={{paddingTop:'3rem',marginTop:'-1rem'}} className="content">
                 <h3>
-                  <span style={{lineHeight:'10px'}} className="count">{item.count}</span><br />
+                  <span style={{lineHeight:'10px',color:'white'}} className="count">{item.count}</span><br />
                   {item.label}
                 </h3>
                 <p className="text-white">{item.description}</p>
