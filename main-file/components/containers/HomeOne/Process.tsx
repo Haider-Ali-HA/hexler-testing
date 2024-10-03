@@ -7,7 +7,7 @@ import Five from "@/public/images/process/process-image3.png";
 
 const Process = () => {
   return (
-    <section className="process-area pt-120 pb-120">
+    <section className="process-area pt-100 pb-120">
       <div className="container">
         <div className="section-header text-center mb-60">
           <h5
