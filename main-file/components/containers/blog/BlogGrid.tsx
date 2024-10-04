@@ -8,7 +8,9 @@ import Four from "@/public/images/blog/blog-image4.jpg";
 import Five from "@/public/images/blog/blog-image5.jpg";
 import Six from "@/public/images/blog/blog-image6.jpg";
 
+
 const BlogGrid = () => {
+  
   return (
     <section className="blog-area pt-120 pb-120">
       <div className="container">

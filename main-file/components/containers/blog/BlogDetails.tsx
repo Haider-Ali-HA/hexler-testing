@@ -20,6 +20,7 @@ const BlogDetails = ({blog}:any) => {
     return new Date(dateString).toLocaleDateString('en-US', options);
   };
 
+  // console.log(blog)
   return (
     <section className="blog-single-area pt-120 pb-120">
       <div className="container">
@@ -132,10 +133,10 @@ const BlogDetails = ({blog}:any) => {
                   {blog?.description2}
                 </p>
 
-                  {/* Quote of blog  */}
+                  {/* blogQuote of blog  */}
                 <div className="hilight-text mt-40 mb-30 sub-bg">
                   <p>
-                    {blog?.quote}
+                    {blog?.blogQuote}
                   </p>
                   <svg
                     width="36"
