@@ -42,7 +42,7 @@ const BlogDetails = ({blog}:any) => {
                       />
                     </svg>
                     <Link href="blog-single">
-                      <span className="primary-hover transition">By {blog.author}</span>
+                      <span className="primary-hover transition">By {blog?.author}</span>
                     </Link>
                   </li>
                   {/* Date of blog  */}
@@ -99,33 +99,33 @@ const BlogDetails = ({blog}:any) => {
                 </ul>
 
                 <h3 className="blog-single__title mt-20">
-                 {blog.title}
+                 {blog?.title}
                 </h3>
 
                 <p className="mb-20 mt-20">
-                  {blog.description1}
+                  {blog?.description1}
                 </p>
                 
                 <div className="row">
                   <div className="col-6">
                     <div className="image">
-                      <Image src={blog.imgOne ? blog.imgOne : Two} alt="Image" priority />
+                      <Image src={blog?.imgOne ? blog.imgOne : Two} alt="Image" priority />
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="image">
-                      <Image src={blog.imgTwo ? blog.imgTwo : Three} alt="Image" priority />
+                      <Image src={blog?.imgTwo ? blog.imgTwo : Three} alt="Image" priority />
                     </div>
                   </div>
                 </div>
                 <p className="mt-20">
-                  {blog.description2}
+                  {blog?.description2}
                 </p>
 
                   {/* Quote of blog  */}
                 <div className="hilight-text mt-40 mb-30 sub-bg">
                   <p>
-                    {blog.quote}
+                    {blog?.quote}
                   </p>
                   <svg
                     width="36"
@@ -146,7 +146,7 @@ const BlogDetails = ({blog}:any) => {
                 </div>
 
                 <p>
-                  {blog.description2}
+                  {blog?.description2}
                 </p>
                 
                 <div className="tags-share mt-40">
