@@ -16,7 +16,9 @@ const BlogGrid = () => {
 
           {blogsData.map((blog) => {
             return (
-              <BlogCard data={blog}/>
+              <div key={blog.id}>
+                <BlogCard data={blog} />
+              </div>
             )
           }
           )}
@@ -42,10 +44,9 @@ const BlogGrid = () => {
 export default BlogGrid;
 
 
-const BlogCard = ({data}:any) => {
+const BlogCard = ({ data }: any) => {
   return (
     <div
-    key={data.id}
       className="col-xl-4 col-lg-6 col-md-6 "
       data-aos="fade-up"
       data-aos-delay="0"
@@ -55,7 +56,7 @@ const BlogCard = ({data}:any) => {
         <Link href="blog-details" className="blog__image d-block image">
           <Image style={{
             aspectRatio: '16/9'
-          }}  width={100} height={100} src={data.thumbnail ? data.thumbnail : One} alt="Image" priority />
+          }} width={100} height={100} src={data.thumbnail ? data.thumbnail : One} alt="Image" priority />
 
           {/* Date of blog */}
           {/* <div className="blog-tag">
