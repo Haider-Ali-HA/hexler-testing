@@ -338,7 +338,7 @@ const BlogDetails = ({blog}:any) => {
                 <ul className="single-post">
                   
                   {recentBlogs.map((blog) => (
-                    <li>
+                    <li key={blog.id}>
                     <Image src={ Six} alt="Image" priority />
                     <div className="con">
                       <span>
