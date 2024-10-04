@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { blogsData } from "@/constants/blogsData";
 import One from "@/public/images/blog/blog-single-image1.jpg";
 import Two from "@/public/images/blog/blog-single-sm1.jpg";
 import Three from "@/public/images/blog/blog-single-sm2.jpg";
@@ -10,6 +11,15 @@ import Seven from "@/public/images/blog/post-sm2.png";
 import Eight from "@/public/images/blog/post-sm3.png";
 
 const BlogDetails = ({blog}:any) => {
+
+  const recentBlogs = blogsData.slice(0, 3);
+
+  const formatDate = (dateString:any) => {
+    const options = { day: '2-digit', month: 'long', year: 'numeric' };
+    //@ts-ignore
+    return new Date(dateString).toLocaleDateString('en-US', options);
+  };
+
   return (
     <section className="blog-single-area pt-120 pb-120">
       <div className="container">
@@ -324,10 +334,12 @@ const BlogDetails = ({blog}:any) => {
               </div> */}
 
               <div className="item sub-bg mb-30">
-                <h5 className="title">Resent Post</h5>
+                <h5 className="title">Recent Post</h5>
                 <ul className="single-post">
-                  <li>
-                    <Image src={Six} alt="Image" priority />
+                  
+                  {recentBlogs.map((blog) => (
+                    <li>
+                    <Image src={ Six} alt="Image" priority />
                     <div className="con">
                       <span>
                         <svg
@@ -347,15 +359,16 @@ const BlogDetails = ({blog}:any) => {
                             fill="#3C72FC"
                           />
                         </svg>
-                        20 Nov, 2023
+                        {formatDate(blog?.date)}
                       </span>
                       <h5 className="mt-2">
-                        <Link href="blog-single" className="primary-hover">
-                          Keep Your Business Safe & Endure High Availability
+                        <Link href={`/blog/${blog.id}`} className="primary-hover">
+                         {blog?.title}
                         </Link>
                       </h5>
                     </div>
                   </li>
+                  ))}
                   
                 </ul>
               </div>
