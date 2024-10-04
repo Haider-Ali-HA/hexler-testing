@@ -1598,7 +1598,8 @@
 						font-weight: 500;
 						border: var(--border-1px);
 						text-transform: capitalize;
-						background-color: var(--white);
+						// background-color: var(--primary-color);
+						color: var(--white);
 						font-size: 14px;
 						&:hover {
 							background-color: var(--primary-color);
@@ -1606,6 +1607,19 @@
 							border: 1px solid var(--primary-color);
 						}
 					}
+					// a {
+					// 	padding: 5px 14px;
+					// 	font-weight: 500;
+					// 	border: var(--border-1px);
+					// 	text-transform: capitalize;
+					// 	background-color: var(--primary-color);
+					// 	font-size: 14px;
+					// 	&:hover {
+					// 		background-color: var(--primary-color);
+					// 		color: var(--white);
+					// 		border: 1px solid var(--primary-color);
+					// 	}
+					// }
 				}
 			}
 		}

@@ -9,7 +9,7 @@ import Six from "@/public/images/blog/post-sm1.png";
 import Seven from "@/public/images/blog/post-sm2.png";
 import Eight from "@/public/images/blog/post-sm3.png";
 
-const BlogDetails = () => {
+const BlogDetails = ({blog}:any) => {
   return (
     <section className="blog-single-area pt-120 pb-120">
       <div className="container">
@@ -17,7 +17,7 @@ const BlogDetails = () => {
           <div className="col-lg-8 order-2 order-lg-1">
             <div className="blog__item blog-single__left-item shadow-none">
               <div className="image">
-                <Image src={One} alt="Image" priority />
+                <Image src={blog.mainImg ? blog.mainImg : One} alt="Image" priority />
               </div>
               <div className="blog__content p-0">
                 <ul className="pb-3 pt-30 bor-bottom d-flex gap-4 flex-wrap align-items-center">
@@ -42,10 +42,11 @@ const BlogDetails = () => {
                       />
                     </svg>
                     <Link href="blog-single">
-                      <span className="primary-hover transition">By Admin</span>
+                      <span className="primary-hover transition">By {blog.author}</span>
                     </Link>
                   </li>
-                  <li>
+                  {/* Date of blog  */}
+                  {/* <li>
                     <svg
                       className="me-1"
                       width="20"
@@ -64,8 +65,10 @@ const BlogDetails = () => {
                       />
                     </svg>
                     <span>22, Nov 2023</span>
-                  </li>
-                  <li>
+                  </li> */}
+
+                    {/* Tag of blog */}
+                  {/* <li>
                     <svg
                       className="me-1"
                       width="20"
@@ -91,57 +94,38 @@ const BlogDetails = () => {
                         Technology
                       </span>
                     </Link>
-                  </li>
+                  </li> */}
+
                 </ul>
+
                 <h3 className="blog-single__title mt-20">
-                  Tackling the Changes of Retail Industry
+                 {blog.title}
                 </h3>
+
                 <p className="mb-20 mt-20">
-                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore of magna aliqua. Ut enim ad minim veniam,
-                  made of owl the quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea dolor commodo consequat. Duis aute irure and
-                  dolor in reprehenderit.
+                  {blog.description1}
                 </p>
-                <p className="mb-20">
-                  The is ipsum dolor sit amet consectetur adipiscing elit. Fusce
-                  eleifend porta arcu In hac habitasse the is platea augue
-                  thelorem turpoi dictumst. In lacus libero faucibus at
-                  malesuada sagittis placerat eros sed istincidunt augue ac ante
-                  rutrum sed the is sodales augue consequat.
-                </p>
-                <p className="mb-20">
-                  Nulla facilisi. Vestibulum tristique sem in eros eleifend
-                  imperdiet. Donec quis convallis neque. In id lacus pulvinar
-                  lacus, eget vulputate lectus. Ut viverra bibendum lorem, at
-                  tempus nibh mattis in. Sed a massa eget lacus consequat
-                  auctor.
-                </p>
+                
                 <div className="row">
                   <div className="col-6">
                     <div className="image">
-                      <Image src={Two} alt="Image" priority />
+                      <Image src={blog.imgOne ? blog.imgOne : Two} alt="Image" priority />
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="image">
-                      <Image src={Three} alt="Image" priority />
+                      <Image src={blog.imgTwo ? blog.imgTwo : Three} alt="Image" priority />
                     </div>
                   </div>
                 </div>
                 <p className="mt-20">
-                  The is ipsum dolor sit amet consectetur adipiscing elit. Fusce
-                  eleifend porta arcu In hac habitasse the is platea augue
-                  thelorem turpoi dictumst. In lacus libero faucibus at
-                  malesuada sagittis placerat eros sed istincidunt augue ac ante
-                  rutrum sed the is sodales augue consequat.
+                  {blog.description2}
                 </p>
+
+                  {/* Quote of blog  */}
                 <div className="hilight-text mt-40 mb-30 sub-bg">
                   <p>
-                    Pellentesque sollicitudin congue dolor non aliquam. Morbi
-                    volutpat, nisi vel ultricies urnacondimentum, sapien neque
-                    lobortis tortor, quis efficitur mi ipsum eu metus. Praesent
-                    eleifend orci sit amet est vehicula.
+                    {blog.quote}
                   </p>
                   <svg
                     width="36"
@@ -160,21 +144,22 @@ const BlogDetails = () => {
                     />
                   </svg>
                 </div>
+
                 <p>
-                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore of magna aliqua. Ut enim ad minim veniam,
-                  made of owl the quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea dolor commodo consequat. Duis aute irure and
-                  dolor in reprehenderit.
+                  {blog.description2}
                 </p>
+                
                 <div className="tags-share mt-40">
+
                   <div className="tags">
                     <strong>Tags:</strong>
-                    <Link href="/">business</Link>
-                    <Link href="/">marketing</Link>
-                    <Link href="/">services</Link>
+                    {blog.metaData.categoryTags.map((tag:any) => <Link href="">{tag}</Link>
+                    )}
                   </div>
-                  <div className="share">
+
+
+                    {/* Social shares  */}
+                  {/* <div className="share">
                     <strong>Share:</strong>
                     <Link href="/">
                       <i className="fa-brands fa-facebook-f"></i>
@@ -188,11 +173,13 @@ const BlogDetails = () => {
                     <Link href="/">
                       <i className="fa-brands fa-pinterest-p"></i>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="blog-single__review mt-60">
+
+            {/* Reviews and Comments  */}
+            {/* <div className="blog-single__review mt-60">
               <h3>02 Reviews, for Tiles</h3>
               <div className="blog-single__comment d-flex gap-4 mt-60 pb-60 bor-bottom">
                 <div className="image">
@@ -298,11 +285,13 @@ const BlogDetails = () => {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
+
+
           </div>
           <div className="col-lg-4 order-1 order-lg-2">
             <div className="blog-single__right-item">
-              <div className="item sub-bg mb-30">
+              {/* <div className="item sub-bg mb-30">
                 <h5 className="title">Search</h5>
                 <div className="serach-bar">
                   <input type="text" placeholder="Search here" />
@@ -310,8 +299,10 @@ const BlogDetails = () => {
                     <i className="fa-regular fa-magnifying-glass"></i>
                   </button>
                 </div>
-              </div>
-              <div className="item sub-bg mb-30">
+              </div> */}
+
+              {/* Categories  */}
+              {/* <div className="item sub-bg mb-30">
                 <h5 className="title">Category</h5>
                 <ul className="category">
                   <li>
@@ -330,7 +321,8 @@ const BlogDetails = () => {
                     <Link href="/">Cyber Security</Link> <span>(08)</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
+
               <div className="item sub-bg mb-30">
                 <h5 className="title">Resent Post</h5>
                 <ul className="single-post">
@@ -364,81 +356,14 @@ const BlogDetails = () => {
                       </h5>
                     </div>
                   </li>
-                  <li>
-                    <Image src={Seven} alt="Image" priority />
-                    <div className="con">
-                      <span>
-                        <svg
-                          className="me-1"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.66797 4.79166C6.3263 4.79166 6.04297 4.50832 6.04297 4.16666V1.66666C6.04297 1.32499 6.3263 1.04166 6.66797 1.04166C7.00964 1.04166 7.29297 1.32499 7.29297 1.66666V4.16666C7.29297 4.50832 7.00964 4.79166 6.66797 4.79166ZM13.3346 4.79166C12.993 4.79166 12.7096 4.50832 12.7096 4.16666V1.66666C12.7096 1.32499 12.993 1.04166 13.3346 1.04166C13.6763 1.04166 13.9596 1.32499 13.9596 1.66666V4.16666C13.9596 4.50832 13.6763 4.79166 13.3346 4.79166ZM7.08464 12.0833C6.9763 12.0833 6.86797 12.0583 6.76797 12.0167C6.65964 11.975 6.5763 11.9167 6.49297 11.8417C6.34297 11.6833 6.2513 11.475 6.2513 11.25C6.2513 11.1417 6.2763 11.0333 6.31797 10.9333C6.35964 10.8333 6.41797 10.7417 6.49297 10.6583C6.5763 10.5833 6.65964 10.525 6.76797 10.4833C7.06797 10.3583 7.44297 10.425 7.6763 10.6583C7.8263 10.8167 7.91797 11.0333 7.91797 11.25C7.91797 11.3 7.90964 11.3583 7.9013 11.4167C7.89297 11.4667 7.8763 11.5167 7.8513 11.5667C7.83464 11.6167 7.80964 11.6667 7.7763 11.7167C7.7513 11.7583 7.70964 11.8 7.6763 11.8417C7.51797 11.9917 7.3013 12.0833 7.08464 12.0833ZM10.0013 12.0833C9.89297 12.0833 9.78464 12.0583 9.68464 12.0167C9.5763 11.975 9.49297 11.9167 9.40964 11.8417C9.25964 11.6833 9.16797 11.475 9.16797 11.25C9.16797 11.1417 9.19297 11.0333 9.23464 10.9333C9.2763 10.8333 9.33464 10.7417 9.40964 10.6583C9.49297 10.5833 9.5763 10.525 9.68464 10.4833C9.98464 10.35 10.3596 10.425 10.593 10.6583C10.743 10.8167 10.8346 11.0333 10.8346 11.25C10.8346 11.3 10.8263 11.3583 10.818 11.4167C10.8096 11.4667 10.793 11.5167 10.768 11.5667C10.7513 11.6167 10.7263 11.6667 10.693 11.7167C10.668 11.7583 10.6263 11.8 10.593 11.8417C10.4346 11.9917 10.218 12.0833 10.0013 12.0833ZM12.918 12.0833C12.8096 12.0833 12.7013 12.0583 12.6013 12.0167C12.493 11.975 12.4096 11.9167 12.3263 11.8417L12.2263 11.7167C12.1947 11.6702 12.1695 11.6198 12.1513 11.5667C12.1272 11.5194 12.1104 11.4689 12.1013 11.4167C12.093 11.3583 12.0846 11.3 12.0846 11.25C12.0846 11.0333 12.1763 10.8167 12.3263 10.6583C12.4096 10.5833 12.493 10.525 12.6013 10.4833C12.9096 10.35 13.2763 10.425 13.5096 10.6583C13.6596 10.8167 13.7513 11.0333 13.7513 11.25C13.7513 11.3 13.743 11.3583 13.7346 11.4167C13.7263 11.4667 13.7096 11.5167 13.6846 11.5667C13.668 11.6167 13.643 11.6667 13.6096 11.7167C13.5846 11.7583 13.543 11.8 13.5096 11.8417C13.3513 11.9917 13.1346 12.0833 12.918 12.0833ZM7.08464 15C6.9763 15 6.86797 14.975 6.76797 14.9333C6.66797 14.8917 6.5763 14.8333 6.49297 14.7583C6.34297 14.6 6.2513 14.3833 6.2513 14.1667C6.2513 14.0583 6.2763 13.95 6.31797 13.85C6.35964 13.7417 6.41797 13.65 6.49297 13.575C6.8013 13.2667 7.36797 13.2667 7.6763 13.575C7.8263 13.7333 7.91797 13.95 7.91797 14.1667C7.91797 14.3833 7.8263 14.6 7.6763 14.7583C7.51797 14.9083 7.3013 15 7.08464 15ZM10.0013 15C9.78464 15 9.56797 14.9083 9.40964 14.7583C9.25964 14.6 9.16797 14.3833 9.16797 14.1667C9.16797 14.0583 9.19297 13.95 9.23464 13.85C9.2763 13.7417 9.33464 13.65 9.40964 13.575C9.71797 13.2667 10.2846 13.2667 10.593 13.575C10.668 13.65 10.7263 13.7417 10.768 13.85C10.8096 13.95 10.8346 14.0583 10.8346 14.1667C10.8346 14.3833 10.743 14.6 10.593 14.7583C10.4346 14.9083 10.218 15 10.0013 15ZM12.918 15C12.7013 15 12.4846 14.9083 12.3263 14.7583C12.2492 14.6801 12.1895 14.5863 12.1513 14.4833C12.1096 14.3833 12.0846 14.275 12.0846 14.1667C12.0846 14.0583 12.1096 13.95 12.1513 13.85C12.193 13.7417 12.2513 13.65 12.3263 13.575C12.518 13.3833 12.8096 13.2917 13.0763 13.35C13.1346 13.3583 13.1846 13.375 13.2346 13.4C13.2846 13.4167 13.3346 13.4417 13.3846 13.475C13.4263 13.5 13.468 13.5417 13.5096 13.575C13.6596 13.7333 13.7513 13.95 13.7513 14.1667C13.7513 14.3833 13.6596 14.6 13.5096 14.7583C13.3513 14.9083 13.1346 15 12.918 15ZM17.0846 8.19999H2.91797C2.5763 8.19999 2.29297 7.91666 2.29297 7.57499C2.29297 7.23332 2.5763 6.94999 2.91797 6.94999H17.0846C17.4263 6.94999 17.7096 7.23332 17.7096 7.57499C17.7096 7.91666 17.4263 8.19999 17.0846 8.19999Z"
-                            fill="#3C72FC"
-                          />
-                          <path
-                            d="M13.3333 18.9583H6.66667C3.625 18.9583 1.875 17.2083 1.875 14.1667V7.08332C1.875 4.04166 3.625 2.29166 6.66667 2.29166H13.3333C16.375 2.29166 18.125 4.04166 18.125 7.08332V14.1667C18.125 17.2083 16.375 18.9583 13.3333 18.9583ZM6.66667 3.54166C4.28333 3.54166 3.125 4.69999 3.125 7.08332V14.1667C3.125 16.55 4.28333 17.7083 6.66667 17.7083H13.3333C15.7167 17.7083 16.875 16.55 16.875 14.1667V7.08332C16.875 4.69999 15.7167 3.54166 13.3333 3.54166H6.66667Z"
-                            fill="#3C72FC"
-                          />
-                        </svg>
-                        22 Nov, 2023
-                      </span>
-                      <h5 className="mt-2">
-                        <Link href="blog-single" className="primary-hover">
-                          Tacking the Changes of <br />
-                          Retail Industry
-                        </Link>
-                      </h5>
-                    </div>
-                  </li>
-                  <li>
-                    <Image src={Eight} alt="Image" priority />
-                    <div className="con">
-                      <span>
-                        <svg
-                          className="me-1"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.66797 4.79166C6.3263 4.79166 6.04297 4.50832 6.04297 4.16666V1.66666C6.04297 1.32499 6.3263 1.04166 6.66797 1.04166C7.00964 1.04166 7.29297 1.32499 7.29297 1.66666V4.16666C7.29297 4.50832 7.00964 4.79166 6.66797 4.79166ZM13.3346 4.79166C12.993 4.79166 12.7096 4.50832 12.7096 4.16666V1.66666C12.7096 1.32499 12.993 1.04166 13.3346 1.04166C13.6763 1.04166 13.9596 1.32499 13.9596 1.66666V4.16666C13.9596 4.50832 13.6763 4.79166 13.3346 4.79166ZM7.08464 12.0833C6.9763 12.0833 6.86797 12.0583 6.76797 12.0167C6.65964 11.975 6.5763 11.9167 6.49297 11.8417C6.34297 11.6833 6.2513 11.475 6.2513 11.25C6.2513 11.1417 6.2763 11.0333 6.31797 10.9333C6.35964 10.8333 6.41797 10.7417 6.49297 10.6583C6.5763 10.5833 6.65964 10.525 6.76797 10.4833C7.06797 10.3583 7.44297 10.425 7.6763 10.6583C7.8263 10.8167 7.91797 11.0333 7.91797 11.25C7.91797 11.3 7.90964 11.3583 7.9013 11.4167C7.89297 11.4667 7.8763 11.5167 7.8513 11.5667C7.83464 11.6167 7.80964 11.6667 7.7763 11.7167C7.7513 11.7583 7.70964 11.8 7.6763 11.8417C7.51797 11.9917 7.3013 12.0833 7.08464 12.0833ZM10.0013 12.0833C9.89297 12.0833 9.78464 12.0583 9.68464 12.0167C9.5763 11.975 9.49297 11.9167 9.40964 11.8417C9.25964 11.6833 9.16797 11.475 9.16797 11.25C9.16797 11.1417 9.19297 11.0333 9.23464 10.9333C9.2763 10.8333 9.33464 10.7417 9.40964 10.6583C9.49297 10.5833 9.5763 10.525 9.68464 10.4833C9.98464 10.35 10.3596 10.425 10.593 10.6583C10.743 10.8167 10.8346 11.0333 10.8346 11.25C10.8346 11.3 10.8263 11.3583 10.818 11.4167C10.8096 11.4667 10.793 11.5167 10.768 11.5667C10.7513 11.6167 10.7263 11.6667 10.693 11.7167C10.668 11.7583 10.6263 11.8 10.593 11.8417C10.4346 11.9917 10.218 12.0833 10.0013 12.0833ZM12.918 12.0833C12.8096 12.0833 12.7013 12.0583 12.6013 12.0167C12.493 11.975 12.4096 11.9167 12.3263 11.8417L12.2263 11.7167C12.1947 11.6702 12.1695 11.6198 12.1513 11.5667C12.1272 11.5194 12.1104 11.4689 12.1013 11.4167C12.093 11.3583 12.0846 11.3 12.0846 11.25C12.0846 11.0333 12.1763 10.8167 12.3263 10.6583C12.4096 10.5833 12.493 10.525 12.6013 10.4833C12.9096 10.35 13.2763 10.425 13.5096 10.6583C13.6596 10.8167 13.7513 11.0333 13.7513 11.25C13.7513 11.3 13.743 11.3583 13.7346 11.4167C13.7263 11.4667 13.7096 11.5167 13.6846 11.5667C13.668 11.6167 13.643 11.6667 13.6096 11.7167C13.5846 11.7583 13.543 11.8 13.5096 11.8417C13.3513 11.9917 13.1346 12.0833 12.918 12.0833ZM7.08464 15C6.9763 15 6.86797 14.975 6.76797 14.9333C6.66797 14.8917 6.5763 14.8333 6.49297 14.7583C6.34297 14.6 6.2513 14.3833 6.2513 14.1667C6.2513 14.0583 6.2763 13.95 6.31797 13.85C6.35964 13.7417 6.41797 13.65 6.49297 13.575C6.8013 13.2667 7.36797 13.2667 7.6763 13.575C7.8263 13.7333 7.91797 13.95 7.91797 14.1667C7.91797 14.3833 7.8263 14.6 7.6763 14.7583C7.51797 14.9083 7.3013 15 7.08464 15ZM10.0013 15C9.78464 15 9.56797 14.9083 9.40964 14.7583C9.25964 14.6 9.16797 14.3833 9.16797 14.1667C9.16797 14.0583 9.19297 13.95 9.23464 13.85C9.2763 13.7417 9.33464 13.65 9.40964 13.575C9.71797 13.2667 10.2846 13.2667 10.593 13.575C10.668 13.65 10.7263 13.7417 10.768 13.85C10.8096 13.95 10.8346 14.0583 10.8346 14.1667C10.8346 14.3833 10.743 14.6 10.593 14.7583C10.4346 14.9083 10.218 15 10.0013 15ZM12.918 15C12.7013 15 12.4846 14.9083 12.3263 14.7583C12.2492 14.6801 12.1895 14.5863 12.1513 14.4833C12.1096 14.3833 12.0846 14.275 12.0846 14.1667C12.0846 14.0583 12.1096 13.95 12.1513 13.85C12.193 13.7417 12.2513 13.65 12.3263 13.575C12.518 13.3833 12.8096 13.2917 13.0763 13.35C13.1346 13.3583 13.1846 13.375 13.2346 13.4C13.2846 13.4167 13.3346 13.4417 13.3846 13.475C13.4263 13.5 13.468 13.5417 13.5096 13.575C13.6596 13.7333 13.7513 13.95 13.7513 14.1667C13.7513 14.3833 13.6596 14.6 13.5096 14.7583C13.3513 14.9083 13.1346 15 12.918 15ZM17.0846 8.19999H2.91797C2.5763 8.19999 2.29297 7.91666 2.29297 7.57499C2.29297 7.23332 2.5763 6.94999 2.91797 6.94999H17.0846C17.4263 6.94999 17.7096 7.23332 17.7096 7.57499C17.7096 7.91666 17.4263 8.19999 17.0846 8.19999Z"
-                            fill="#3C72FC"
-                          />
-                          <path
-                            d="M13.3333 18.9583H6.66667C3.625 18.9583 1.875 17.2083 1.875 14.1667V7.08332C1.875 4.04166 3.625 2.29166 6.66667 2.29166H13.3333C16.375 2.29166 18.125 4.04166 18.125 7.08332V14.1667C18.125 17.2083 16.375 18.9583 13.3333 18.9583ZM6.66667 3.54166C4.28333 3.54166 3.125 4.69999 3.125 7.08332V14.1667C3.125 16.55 4.28333 17.7083 6.66667 17.7083H13.3333C15.7167 17.7083 16.875 16.55 16.875 14.1667V7.08332C16.875 4.69999 15.7167 3.54166 13.3333 3.54166H6.66667Z"
-                            fill="#3C72FC"
-                          />
-                        </svg>
-                        25 Nov, 2023
-                      </span>
-                      <h5 className="mt-2">
-                        <Link href="blog-single" className="primary-hover">
-                          What&apos;s the Holding Back the It Solution
-                        </Link>
-                      </h5>
-                    </div>
-                  </li>
+                  
                 </ul>
               </div>
               <div className="item sub-bg">
                 <h5 className="title">Tags</h5>
                 <div className="tags">
-                  <Link href="/">business</Link>
-                  <Link href="/">marketing</Link>
-                  <Link href="/">solution</Link>
-                  <Link href="/">SMM</Link>
-                  <Link href="/">startup</Link>
-                  <Link href="/">strategy</Link>
-                  <Link href="/">SEO</Link>
-                  <Link href="/">services</Link>
-                  <Link href="/">top</Link>
+                  {blog.metaData.tags.map((tag:any) => <Link href="">{tag}</Link>
+                  )}
                 </div>
               </div>
             </div>
@@ -450,3 +375,4 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+

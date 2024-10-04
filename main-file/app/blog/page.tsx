@@ -11,7 +11,7 @@ const page = () => {
     <div>
       <TopHeader />
       <Header />
-      <CmnBanner title="Blog Grid" />
+      <CmnBanner title="Blogs" />
       <BlogGrid />
       <Footer />
       <CustomCursor />

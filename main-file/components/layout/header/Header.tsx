@@ -193,7 +193,7 @@ const Header = () => {
                     <Link href="/team">Our Team</Link>
                   </li>
 
-                  {/* <li>
+                  <li>
                     <Link href="/blog">Blogs</Link>
                     <ul className="sub-menu">
                       <li>
@@ -206,7 +206,7 @@ const Header = () => {
                         <Link href="blog-details">Blog Details</Link>
                       </li>
                     </ul>
-                  </li> */}
+                  </li>
                   {/* <li>
                     <Link href="contact">Contact</Link>
                   </li> */}
