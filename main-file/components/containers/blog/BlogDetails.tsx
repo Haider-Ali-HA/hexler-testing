@@ -153,7 +153,7 @@ const BlogDetails = ({blog}:any) => {
 
                   <div className="tags">
                     <strong>Tags:</strong>
-                    {blog.metaData.categoryTags.map((tag:any) => <Link key={blog.id} href="">{tag}</Link>
+                    {blog?.metaData?.categoryTags.map((tag:any) => <Link key={blog.id} href="">{tag}</Link>
                     )}
                   </div>
 
@@ -362,7 +362,7 @@ const BlogDetails = ({blog}:any) => {
               <div className="item sub-bg">
                 <h5 className="title">Tags</h5>
                 <div className="tags">
-                  {blog.metaData.tags.map((tag:any) => <Link key={blog.id} href="">{tag}</Link>
+                  {blog?.metaData?.tags.map((tag:any) => <Link key={blog.id} href="">{tag}</Link>
                   )}
                 </div>
               </div>
