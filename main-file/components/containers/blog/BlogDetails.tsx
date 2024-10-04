@@ -17,7 +17,7 @@ const BlogDetails = ({blog}:any) => {
           <div className="col-lg-8 order-2 order-lg-1">
             <div className="blog__item blog-single__left-item shadow-none">
               <div className="image">
-                <Image src={blog.mainImg ? blog.mainImg : One} alt="Image" priority />
+                <Image src={blog?.mainImg ? blog?.mainImg : One} alt="Image" priority />
               </div>
               <div className="blog__content p-0">
                 <ul className="pb-3 pt-30 bor-bottom d-flex gap-4 flex-wrap align-items-center">
