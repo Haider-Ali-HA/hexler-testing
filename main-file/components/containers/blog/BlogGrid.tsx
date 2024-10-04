@@ -16,7 +16,7 @@ const BlogGrid = () => {
 
           {blogsData.map((blog) => {
             return (
-              <div key={blog.id}>
+              <div className="col-xl-4 col-lg-6 col-md-6 " key={blog.id}>
                 <BlogCard data={blog} />
               </div>
             )
@@ -47,7 +47,6 @@ export default BlogGrid;
 const BlogCard = ({ data }: any) => {
   return (
     <div
-      className="col-xl-4 col-lg-6 col-md-6 "
       data-aos="fade-up"
       data-aos-delay="0"
       data-aos-duration="1500"

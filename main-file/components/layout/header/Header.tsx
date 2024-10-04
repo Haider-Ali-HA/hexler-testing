@@ -195,7 +195,7 @@ const Header = () => {
 
                   <li>
                     <Link href="/blog">Blogs</Link>
-                    <ul className="sub-menu">
+                    {/* <ul className="sub-menu">
                       <li>
                         <Link href="blog">Blog Grid</Link>
                       </li>
@@ -205,7 +205,7 @@ const Header = () => {
                       <li>
                         <Link href="blog-details">Blog Details</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   {/* <li>
                     <Link href="contact">Contact</Link>
