@@ -9,6 +9,16 @@
         font-size: 2rem;
     }
 }
+.about-second-section-header{
+    font-size: 3.8rem;
+    line-height: 1;
+  }
+
+@media screen and  (max-width: 768px) {
+    .second-section-header{
+        font-size: 2rem;
+    }
+}
 
 
 .second-section-card{

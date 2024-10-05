@@ -18,9 +18,9 @@ const AboutTwo = () => {
         <div className="row g-4">
           <div
             className="col-xl-6 "
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="1500"
+            // data-aos="fade-right"
+            // data-aos-delay="200"
+            // data-aos-duration="1500"
           >
             <div className="about-two__left-item">
               <div className="dots">
@@ -59,9 +59,9 @@ const AboutTwo = () => {
             <div className="section-header mb-40">
               <h5
                 className=""
-                data-aos="fade-up"
-                data-aos-delay="0"
-                data-aos-duration="1500"
+                // data-aos="fade-up"
+                // data-aos-delay="0"
+                // data-aos-duration="1500"
               >
                 <svg
                   className="me-1"
@@ -93,17 +93,17 @@ const AboutTwo = () => {
               </h5>
               <h2
                 className=""
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="1500"
+                // data-aos="fade-up"
+                // data-aos-delay="200"
+                // data-aos-duration="1500"
               >
                 Ensuring Your Success Through Reliable IT Solutions{" "}
               </h2>
               <p
                 className=""
-                data-aos="fade-up"
-                data-aos-delay="400"
-                data-aos-duration="1500"
+                // data-aos="fade-up"
+                // data-aos-delay="400"
+                // data-aos-duration="1500"
               >
                 Aonsectetur adipiscing elit aenean scelerisque augue vitae
                 consequat aisque eget congue velit in cursus sodales the turpis
@@ -113,9 +113,9 @@ const AboutTwo = () => {
             </div>
             <div
               className="about-two__right-item "
-              data-aos="fade-down"
-              data-aos-delay="200"
-              data-aos-duration="1500"
+              // data-aos="fade-down"
+              // data-aos-delay="200"
+              // data-aos-duration="1500"
             >
               <ul>
                 <li>
@@ -136,9 +136,9 @@ const AboutTwo = () => {
             </div>
             <div
               className="about__info mt-50 "
-              data-aos="fade-down"
-              data-aos-delay="400"
-              data-aos-duration="1500"
+              // data-aos="fade-down"
+              // data-aos-delay="400"
+              // data-aos-duration="1500"
             >
               <Link href="about-us" className="btn-one">
                 About Us <i className="fa-regular fa-arrow-right-long"></i>

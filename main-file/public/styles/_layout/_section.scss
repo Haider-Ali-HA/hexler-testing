@@ -1050,7 +1050,8 @@
 // Brand area start here ***
 .brand {
 	&__wrp {
-		padding: 25px 50px;
+		// padding: 25px 50px;
+		padding: 0px 50px;
 		background: linear-gradient(to right, #0F0E1F, #1f2136, #0F0E1F); 
 		margin-top: -85px;
 		position: relative;
@@ -1065,8 +1066,8 @@
 	&__image {
 		// max-width: 175px;
 		max-height: auto;
-		height: auto;
-		width: 180px;
+		height: 150px;
+		width: 280px;
 		
     // overflow: hidden; /* Ensure any overflow is hidden */
 	//traget img inside it 

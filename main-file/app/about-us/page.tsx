@@ -10,6 +10,7 @@ import Team from "@/components/containers/HomeTwo/Team";
 import Footer from "@/components/layout/footer/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
+import AboutSecondSection from "@/components/containers/about/AboutSecondSection";
 
 const page = () => {
   return (
@@ -17,8 +18,9 @@ const page = () => {
       <TopHeader />
       <Header />
       <CmnBanner title="About Us" />
+      <AboutSecondSection />
       <AboutTwo />
-      <Offer />
+      <Offer /> 
       <Brand />
       <Case />
       <Testimonial />

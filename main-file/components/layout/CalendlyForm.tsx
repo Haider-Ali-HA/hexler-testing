@@ -12,9 +12,9 @@ const CalendlyForm = () => {
   return (
     <div
       className="col-12"
-      data-aos="fade-left"
-      data-aos-delay="200"
-      data-aos-duration="1500"
+      // data-aos="fade-left"
+      // data-aos-delay="200"
+      // data-aos-duration="1500"
     >
       {isClient && (
         <InlineWidget 

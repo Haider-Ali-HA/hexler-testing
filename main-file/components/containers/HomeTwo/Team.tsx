@@ -11,9 +11,9 @@ const Team = () => {
         <div className="section-header text-center mb-60">
           <h5
             className=""
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-delay="0"
+            // data-aos-duration="1500"
           >
             <svg
               className="me-1"
@@ -45,9 +45,9 @@ const Team = () => {
           </h5>
           <h2
             className=""
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-delay="200"
+            // data-aos-duration="1500"
           >
             Our Leadership Team
           </h2>
@@ -55,9 +55,9 @@ const Team = () => {
         <div className="row g-4">
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-delay="0"
+            // data-aos-duration="1500"
           >
             <div className="team__item">
               <div className="image">
@@ -97,9 +97,9 @@ const Team = () => {
           </div>
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-delay="200"
+            // data-aos-duration="1500"
           >
             <div className="team__item">
               <div className="image">
@@ -139,9 +139,9 @@ const Team = () => {
           </div>
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1500"
+            // data-aos="fade-up"
+            // data-aos-delay="400"
+            // data-aos-duration="1500"
           >
             <div className="team__item">
               <div className="image">

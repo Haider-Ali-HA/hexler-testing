@@ -38,10 +38,6 @@ const CounterSection2 = () => {
             <div
               className="counter__item"
               key={index}
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-delay={index * 200}
-              data-aos-duration="1000"
             >
               <Image  width={110} src={item.icon} alt="icon" priority />
               <div style={{paddingTop:'3rem',marginTop:'-1rem'}} className="content">
