@@ -105,10 +105,7 @@ const AboutTwo = () => {
                 // data-aos-delay="400"
                 // data-aos-duration="1500"
               >
-                Aonsectetur adipiscing elit aenean scelerisque augue vitae
-                consequat aisque eget congue velit in cursus sodales the turpis
-                euismod quis sapien euismod quis sapien the condimentum nec
-                lorem nulla augue.
+                We are dedicated to providing smart business solutions that help companies succeed. By using the latest technology and understanding your unique needs, we create efficient strategies that drive growth. Our collaborative approach ensures we are with you every step of the way.
               </p>
             </div>
             <div

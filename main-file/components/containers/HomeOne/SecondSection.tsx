@@ -26,7 +26,7 @@ const SecondSection = () => {
                                 <div className="">
                                     <Card
                                         title="Modern Solutions"
-                                        description="Our motto is to deliver ethical and professional services to our valued clients. We transform ideas into reality."
+                                        description="We always try to come up with solutions to channelize the needs of our clients."
                                     />
                                 </div>
                             </div>
@@ -34,14 +34,16 @@ const SecondSection = () => {
                             <div className="col-lg-6">
                                 <div className=" ">
                                     <Card
-                                        title="Modern Solutions"
-                                        description="Our motto is to deliver ethical and professional services to our valued clients. We transform ideas into reality."
+                                        title="Experienced Team"
+                                        description="Our experienced team collaborates closely with you throughout our engagement.
+"
                                     />
+
                                 </div>
                                 <div className="">
                                     <Card
-                                        title="Modern Solutions"
-                                        description="Our motto is to deliver ethical and professional services to our valued clients. We transform ideas into reality."
+                                        title="Expert Support"
+                                        description="We transform the traditional ways into innovative techniques and produce smooth experiences."
                                     />
                                 </div>
                             </div>
@@ -60,7 +62,7 @@ export default SecondSection
 
 const Card = ({ title, description }: { title: String, description: String }) => {
     return (
-        <div className="section-header mb-40 second-section-card pt-2">
+        <div style={{minHeight:'12rem'}} className="section-header mb-40 second-section-card pt-2">
             <h2>
                 {title}
             </h2>
