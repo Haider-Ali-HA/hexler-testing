@@ -20,18 +20,18 @@ const Testimonial = () => {
         <div className="row mb-3">
         <div className="section-header">
             <h5
-              // data-aos="fade-left"
-              // data-aos-delay="0"
-              // data-aos-duration="1500"
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1500"
             >
               <Image className="me-1" src={Four} alt="icon" priority />
               Let&apos;s Collaborate
             </h5>
             <h2
               className="text-white "
-              // data-aos="fade-left"
-              // data-aos-delay="200"
-              // data-aos-duration="1500"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1500"
             >
               Set Your Meeting Time
             </h2>

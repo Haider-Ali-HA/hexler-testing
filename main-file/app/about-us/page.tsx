@@ -11,6 +11,7 @@ import Footer from "@/components/layout/footer/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import AboutSecondSection from "@/components/containers/about/AboutSecondSection";
+import AboutThirdSection from "@/components/containers/about/AboutThirdSection";
 
 const page = () => {
   return (
@@ -21,9 +22,10 @@ const page = () => {
       <AboutSecondSection />
       <AboutTwo />
       <Offer /> 
-      <Brand />
+      {/* <Brand /> */}
+      <AboutThirdSection />
       <Case />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Team />
       <Footer />
       <CustomCursor />

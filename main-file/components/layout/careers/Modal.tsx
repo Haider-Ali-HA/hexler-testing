@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import '@/public/styles/career.css';
+import toast from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
 
 interface ModalComponentProps {
     show: boolean;
     setShow: (show: boolean) => void;
     showCompleted: boolean;
     setShowCompleted: (showCompleted: boolean) => void;
+    job: string;
 }
 
 interface FormData {
+    jobTitle: string;
     firstName: string;
     lastName: string;
     gender: string;
@@ -24,8 +28,9 @@ interface FormData {
     resume: File | null;
 }
 
-const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showCompleted, setShowCompleted }) => {
+const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showCompleted, setShowCompleted , job}) => {
     const [formData, setFormData] = useState<FormData>({
+        jobTitle: '',
         firstName: '',
         lastName: '',
         gender: 'male',
@@ -104,33 +109,55 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
 
 
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         // Checking for required fields
         for (const key in formData) {
-            if(key!='projectLinks'){
+            if(key!='projectLinks' && key!='jobTitle' && key!='resume'){
             if (formData[key as keyof FormData] === '') {
                 alert(`${key} is required`);
                 return;
             }
         }
         }
+
+        formData.jobTitle = job;
+
+        const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
+
+        try {
+            console.log(1)
+            //@ts-ignore
+            const res = await emailjs.send(serviceID!, templateID!, formData, options);
+            console.log(2)
+            console.log(res)
+            if (res.status === 200 ) {
+              toast.success('Form submitted successfully!');
+              setFormData({
+                jobTitle: '',
+                firstName: '',
+                lastName: '',
+                gender: 'male',
+                dob: '',
+                phone: '',
+                email: '',
+                address: '',
+                city: '',
+                projectLinks: '',
+                linkedin: '',
+                github: '',
+                resume: null,
+            });
+            };
+          } catch (error) {
+            toast.error("Some Error Occured...");
+          };
+
         console.log("Submitted Data:", formData);
-        setFormData({
-            firstName: '',
-            lastName: '',
-            gender: 'male',
-            dob: '',
-            phone: '',
-            email: '',
-            address: '',
-            city: '',
-            projectLinks: '',
-            linkedin: '',
-            github: '',
-            resume: null,
-        });
+       
 
         setShowCompleted(true);
         setShow(false);
