@@ -6,7 +6,6 @@ import Three from "@/public/images/shape/about-circle-helper.png";
 import Four from "@/public/images/about/about-two-image1.jpg";
 import Five from "@/public/images/about/about-two-image2.png";
 import Six from "@/public/images/shape/about-two-circle.png";
-import Seven from "@/public/images/about/singature.png";
 
 const AboutTwo = () => {
   return (
@@ -140,7 +139,7 @@ const AboutTwo = () => {
               <Link href="about-us" className="btn-one">
                 About Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
-              <Image src={Seven} alt="singature" priority />
+             
             </div>
           </div>
         </div>

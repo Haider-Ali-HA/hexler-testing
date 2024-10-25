@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import One from "@/public/images/shape/service-two-item-shape.png";
-import Two from "@/public/images/service/service-image1.jpg";
-import Three from "@/public/images/service/service-image2.jpg";
-import Four from "@/public/images/service/service-image3.jpg";
+import Two from "@/public/images/service/mobile-app-development.jpg";
+import Three from "@/public/images/service/software-testing.jpg";
+import Four from "@/public/images/service/web-development.jpg";
 import Five from "@/public/images/service/service-image4.jpg";
-import Six from "@/public/images/service/service-image5.jpg";
-import Seven from "@/public/images/service/service-image6.jpg";
-import Eight from "@/public/images/icon/service-two-icon1.png";
+import Six from "@/public/images/service/devOps.jpg";
+import Seven from "@/public/images/service/ui-ux-design.jpg";
+import Eight from "@/public/images/service/game-development.jpg";
 import Nine from "@/public/images/icon/service-two-icon2.png";
 import Ten from "@/public/images/icon/service-two-icon3.png";
 import Eleven from "@/public/images/icon/service-two-icon4.png";
@@ -51,7 +51,7 @@ const ServiceItems = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Four} alt="Image" priority />
+                <Image src={Two} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">
@@ -79,7 +79,7 @@ const ServiceItems = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Seven} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">
@@ -136,7 +136,7 @@ const ServiceItems = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Three} alt="Image" priority />
+                <Image src={Six} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">
@@ -165,7 +165,7 @@ const ServiceItems = () => {
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
               <div className="image">
-                <Image src={Five} alt="Image" priority />
+                <Image src={Eight} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">

@@ -184,6 +184,48 @@ const TeamItems = () => {
               </div>
             </div>
           </div>
+          <div
+            className="col-xl-4 col-lg-6 col-md-6 "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            <div className="team__item">
+              <div className="image">
+                <Image src={Four} alt="Image" priority />
+              </div>
+              <div className="team__content">
+                <h4>
+                  <Link className="text-white" href=" ">
+                    Zaheer-ul-Hussain
+                  </Link>
+                </h4>
+                <span className="text-white">Consultant</span>
+              </div>
+              <div className="team__share">
+                <ul>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-facebook-f"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-instagram"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </Link>
+                  </li>
+                </ul>
+                <button>
+                  <i className="fa-sharp fa-light fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
           <div
             className="col-xl-4 col-lg-6 col-md-6 "
@@ -572,7 +614,7 @@ const TeamItems = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             className="col-xl-4 col-lg-6 col-md-6 "
             data-aos="fade-up"
             data-aos-delay="400"
@@ -613,7 +655,7 @@ const TeamItems = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
 

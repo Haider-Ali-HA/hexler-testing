@@ -79,12 +79,12 @@ const Footer = () => {
             </div>
           </div>
           <div
-            className="footer__item item-sm "
+            className="footer__item item-sm"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1500"
           >
-            <h3 className="footer-title">IT Solution</h3>
+            <h3 className="footer-title">IT Service</h3>
             <ul>
               <li>
                 {/* <Link href="service-details">
@@ -94,26 +94,32 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="service-details">
-                  <i className="fa-regular fa-angles-right me-1"></i> SEO
-                  Optimization
+                  <i className="fa-regular fa-angles-right me-1"></i> Web Development
                 </Link>
               </li>
               <li>
                 <Link href="service-details">
-                  <i className="fa-regular fa-angles-right me-1"></i> Web
-                  Development
+                  <i className="fa-regular fa-angles-right me-1"></i> Mobile App Development
                 </Link>
               </li>
               <li>
                 <Link href="service-details">
-                  <i className="fa-regular fa-angles-right me-1"></i> Cyber
-                  Security
+                  <i className="fa-regular fa-angles-right me-1"></i> UI/UX Design
                 </Link>
               </li>
               <li>
                 <Link href="service-details">
-                  <i className="fa-regular fa-angles-right me-1"></i> Data
-                  Security
+                  <i className="fa-regular fa-angles-right me-1"></i>Software Testing and QA
+                </Link>
+              </li>
+              <li>
+                <Link href="service-details">
+                  <i className="fa-regular fa-angles-right me-1"></i>DevOps Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="service-details">
+                  <i className="fa-regular fa-angles-right me-1"></i>Game Development
                 </Link>
               </li>
             </ul>

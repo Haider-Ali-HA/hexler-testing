@@ -41,7 +41,7 @@ const About = () => {
                 <div className="image sm-image">
                   <div className="video__btn-wrp">
                     <div className="video-btn video-pulse">
-                      <a className="video-popup" onClick={() => setOpen(true)}>
+                      <a href="https://www.youtube.com/watch?v=FE8NvDXbStk" className="video-popup" onClick={() => setOpen(true)}>
                         <i className="fa-solid fa-play"></i>
                       </a>
                     </div>

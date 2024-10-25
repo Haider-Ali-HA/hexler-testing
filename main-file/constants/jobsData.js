@@ -19,10 +19,10 @@ export const jobsData = [
         name: "Graphic Designer",
         description: "Creates compelling visual content for digital platforms, advertisements, and promotional materials. Works to convey ideas and messages effectively through design, contributing to overall brand identity."
     },
-    {
-        name: "Database Administrator",
-        description: "Oversees the management and maintenance of database systems. Ensures data integrity, security, and availability while optimizing performance and implementing backup strategies."
-    },
+    // {
+    //     name: "Database Administrator",
+    //     description: "Oversees the management and maintenance of database systems. Ensures data integrity, security, and availability while optimizing performance and implementing backup strategies."
+    // },
     {
         name: "DevOps Engineer",
         description: "Bridges the gap between software development and IT operations by automating processes and improving system reliability. Focuses on continuous integration and deployment to enhance productivity and collaboration."

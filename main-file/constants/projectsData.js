@@ -10,14 +10,14 @@ export const projectsData = [
         name: "NSTP",
         description: "Created management system.",
         path: "#",
-        image: "/images/projects/nstp.png",
+        image: "",
         categories: ["App Dev", "Full Stack"]
     },
     {
         name: "Churn Station",
         description: "Built a tool xyz",
         path: "#",
-        image: "/images/projects/churn-station.png",
+        image: "",
         categories: ["App Dev"]
     },
     {
@@ -83,11 +83,11 @@ export const projectsData = [
         image: "",
         categories: ["AI Dev", "Full Stack"]
     },
-    {
-        name: "Sales Insights Dashboard",
-        description: "Built a data analytics dashboard to visualize sales performance and trends.",
-        path: "#",
-        image: "",
-        categories: ["Data Analytics", "Full Stack"]
-    }
+    // {
+    //     name: "Sales Insights Dashboard",
+    //     description: "Built a data analytics dashboard to visualize sales performance and trends.",
+    //     path: "#",
+    //     image: "",
+    //     categories: ["Data Analytics", "Full Stack"]
+    // }
 ];
