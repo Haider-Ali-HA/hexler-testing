@@ -5,10 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import One from "@/public/images/icon/section-title.png";
-import Two from "@/public/images/case/case-image1.jpg";
-import Three from "@/public/images/case/case-image2.jpg";
-import Four from "@/public/images/case/case-image3.jpg";
-import Five from "@/public/images/case/case-image4.jpg";
+import Two from "@/public/images/case/it-management.jpg";
+import Three from "@/public/images/case/plateform-integration.jpg";
+import Four from "@/public/images/case/website-development.jpg";
+import Five from "@/public/images/case/network-security.jpg";
 
 const Case = () => {
   return (

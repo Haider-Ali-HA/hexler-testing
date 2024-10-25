@@ -1,11 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import One from "@/public/images/team/team-image1.jpg";
-import Two from "@/public/images/team/team-image2.jpg";
-import Three from "@/public/images/team/team-image3.jpg";
-import Four from "@/public/images/team/team-image4.jpg";
-import Five from "@/public/images/team/team-image5.jpg";
-import Six from "@/public/images/team/team-image6.jpg";
+import One from "@/public/images/team/man1.jpg";
+import Two from "@/public/images/team/man2.jpg";
+import Three from "@/public/images/team/man3.jpg";
+import Four from "@/public/images/team/man4.jpg";
+import Five from "@/public/images/team/man9.jpg";
+import Six from "@/public/images/team/man6.jpg";
+import Seven from "@/public/images/team/man7.jpg";
+import Eight from "@/public/images/team/man8.jpg";
+import Nine from  "@/public/images/team/man5.jpg";
+import Ten from "@/public/images/team/man10.jpg";
+import Eleven from "@/public/images/team/man11.jpg";
+import Twelve from "@/public/images/team/man12.jpg";
+import Thirteen from "@/public/images/team/women.jpg"
+import Fourteen from "@/public/images/team/women1.jpg"
+
 
 const TeamItems = () => {
   return (
@@ -192,7 +201,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Four} alt="Image" priority />
+                <Image src={Five} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -235,7 +244,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Five} alt="Image" priority />
+                <Image src={Six} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -278,7 +287,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Thirteen} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -321,7 +330,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Seven} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -364,7 +373,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Eight} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -407,7 +416,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Nine} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -450,7 +459,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Ten} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -493,7 +502,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Fourteen} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -536,7 +545,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Twelve} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>
@@ -579,7 +588,7 @@ const TeamItems = () => {
           >
             <div className="team__item">
               <div className="image">
-                <Image src={Six} alt="Image" priority />
+                <Image src={Eleven} alt="Image" priority />
               </div>
               <div className="team__content">
                 <h4>

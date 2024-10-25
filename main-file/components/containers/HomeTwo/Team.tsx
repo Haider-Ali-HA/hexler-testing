@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import One from "@/public/images/team/team-image1.jpg";
-import Two from "@/public/images/team/team-image2.jpg";
-import Three from "@/public/images/team/team-image3.jpg";
+import One from "@/public/images/team/man1.jpg";
+import Two from "@/public/images/team/man8.jpg";
+import Three from "@/public/images/team/man10.jpg";
 
 const Team = () => {
   return (

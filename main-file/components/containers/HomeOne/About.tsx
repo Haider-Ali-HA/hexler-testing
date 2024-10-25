@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ModalVideo from "react-modal-video";
 import Line from "@/public/images/shape/about-line.png";
-import One from "@/public/images/about/about-image1.jpg";
-import Two from "@/public/images/about/about-image2.png";
+import One from "@/public/images/about/about.jpg";
+import Two from "@/public/images/about/about1.jpg";
 import Circle from "@/public/images/shape/about-circle.png";
 import Three from "@/public/images/icon/section-title.png";
 import Four from "@/public/images/icon/about-icon1.png";
@@ -41,7 +41,7 @@ const About = () => {
                 <div className="image sm-image">
                   <div className="video__btn-wrp">
                     <div className="video-btn video-pulse">
-                      <a href="https://www.youtube.com/watch?v=FE8NvDXbStk" className="video-popup" onClick={() => setOpen(true)}>
+                      <a className="video-popup" onClick={() => setOpen(true)}>
                         <i className="fa-solid fa-play"></i>
                       </a>
                     </div>
