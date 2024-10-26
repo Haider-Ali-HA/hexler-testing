@@ -1,7 +1,7 @@
 import Image from "next/image";
 import One from "@/public/images/case/case-details-image1.jpg";
-import Two from "@/public/images/case/case-details-image2.jpg";
-import Three from "@/public/images/case/case-details-image3.jpg";
+import Two from "@/public/images/case/case-detail1.jpg";
+import Three from "@/public/images/case/case-detail2.jpg";
 
 const CaseSingle = () => {
   return (

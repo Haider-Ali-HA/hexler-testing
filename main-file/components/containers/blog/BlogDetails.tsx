@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { blogsData } from "@/constants/blogsData";
-import One from "@/public/images/blog/blog-single-image1.jpg";
-import Two from "@/public/images/blog/blog-single-sm1.jpg";
-import Three from "@/public/images/blog/blog-single-sm2.jpg";
+import One from "@/public/images/blog/blog-detail.jpg";
+import Two from "@/public/images/case/network-security.jpg";
+import Three from "@/public/images/case/plateform-integration.jpg";
 import Four from "@/public/images/blog/comment-image1.png";
 import Five from "@/public/images/blog/comment-image2.png";
 import Six from "@/public/images/blog/web.jpg";
