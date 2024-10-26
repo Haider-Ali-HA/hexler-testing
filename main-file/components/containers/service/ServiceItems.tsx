@@ -22,8 +22,8 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
-                <Image src={Four} alt="Image" priority />
+              <div className="image ">
+                <Image className="" src={Four} alt="Image" priority />
               </div>
               <div className="service-two__content">
                 <div className="icon">

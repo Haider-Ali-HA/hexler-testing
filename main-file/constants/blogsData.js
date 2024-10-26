@@ -6,13 +6,14 @@ import webTwo from "@/public/images/blog/web-left-image.jpg"
 import webThree from "@/public/images/blog/web-right-image.jpg"
 import oneThumbnail from "@/public/images/blog/ai-enhanced.png"
 import twoThumbnail from "@/public/images/blog/website.jpg"
+import threeThumbnail from "@/public/images/blog/react.jpg"
 export const blogsData = [
     {
         id: 1,
         title: "The Future of Software Development: AI and Machine Learning",
         author: "Admin",
         thumbnail:oneThumbnail.src,
-        mainImg: aiOne.src,
+        mainImg: oneThumbnail.src,
         imgOne:aiTwo.src, 
         imgTwo: aiThree.src,
         date: "2023-10-04",
@@ -31,7 +32,7 @@ export const blogsData = [
         title: "Building Scalable Web Applications with Microservices Architecture",
         author: "Admin",
         thumbnail:twoThumbnail.src,
-        mainImg: webOne.src,
+        mainImg:twoThumbnail.src,
         imgOne: webTwo.src,
         imgTwo:  webThree.src,
         date: "2023-10-05",
@@ -49,8 +50,8 @@ export const blogsData = [
         id: 3,
         title: "Mastering React: A Comprehensive Guide",
         author: "Admin",
-        thumbnail:'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  '',
+        thumbnail:threeThumbnail.src,
+        mainImg:  threeThumbnail.src,
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-06",
@@ -69,7 +70,7 @@ export const blogsData = [
         title: "The Importance of Cybersecurity in the Digital Age",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  '',
+        mainImg:  'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=600',
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-07",
@@ -88,7 +89,7 @@ export const blogsData = [
         title: "The Benefits of DevOps for Software Development",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  '',
+        mainImg:  'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
         imgOne:  "",
         imgTwo:  "",
         date: "2023-10-08",

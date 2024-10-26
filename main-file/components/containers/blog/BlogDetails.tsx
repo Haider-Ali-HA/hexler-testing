@@ -28,7 +28,7 @@ const BlogDetails = ({blog}:any) => {
           <div className="col-lg-8 order-2 order-lg-1">
             <div className="blog__item blog-single__left-item shadow-none">
               <div className="image">
-                <Image src={blog?.mainImg ? blog.mainImg : One} width={800} height={600} alt="Image" priority />
+                <Image src={blog?.mainImg ? blog.mainImg : One} width={800} height={800} alt="Image" priority />
               </div>
               <div className="blog__content p-0">
                 <ul className="pb-3 pt-30 bor-bottom d-flex gap-4 flex-wrap align-items-center">
@@ -117,7 +117,7 @@ const BlogDetails = ({blog}:any) => {
                   {blog?.description1}
                 </p>
                 
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-6">
                     <div className="image">
                       <Image src={blog?.imgOne ? blog.imgOne : Two} width={800} height={800} alt="Image" priority />
@@ -128,7 +128,7 @@ const BlogDetails = ({blog}:any) => {
                       <Image src={blog?.imgTwo ? blog.imgTwo : Three} width={800} height={800} alt="Image" priority />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <p className="mt-20">
                   {blog?.description2}
                 </p>
