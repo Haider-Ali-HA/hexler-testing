@@ -4,12 +4,14 @@ import aiThree from "@/public/images/blog/ai-right-image.jpg"
 import webOne from "@/public/images/blog/web-service.jpg"
 import webTwo from "@/public/images/blog/web-left-image.jpg"
 import webThree from "@/public/images/blog/web-right-image.jpg"
+import oneThumbnail from "@/public/images/blog/ai-enhanced.png"
+import twoThumbnail from "@/public/images/blog/website.jpg"
 export const blogsData = [
     {
         id: 1,
         title: "The Future of Software Development: AI and Machine Learning",
         author: "Admin",
-        thumbnail:'https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnV0dXJlJTIwYWl8ZW58MHx8MHx8fDA%3D',
+        thumbnail:oneThumbnail.src,
         mainImg: aiOne.src,
         imgOne:aiTwo.src, 
         imgTwo: aiThree.src,
@@ -28,7 +30,7 @@ export const blogsData = [
         id: 2,
         title: "Building Scalable Web Applications with Microservices Architecture",
         author: "Admin",
-        thumbnail:'https://plus.unsplash.com/premium_photo-1683288706548-e8b6bb72fe86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwY2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D',
+        thumbnail:twoThumbnail.src,
         mainImg: webOne.src,
         imgOne: webTwo.src,
         imgTwo:  webThree.src,
