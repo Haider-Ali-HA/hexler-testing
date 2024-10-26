@@ -6,13 +6,15 @@ import Footer from "@/components/layout/footer/Footer";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 
+
 const page = () => {
+   
   return (
     <div>
       <TopHeader />
       <Header />
       <CmnBanner title="Blogs" />
-      <BlogGrid />
+      <BlogGrid  />
       <Footer />
       <CustomCursor />
       <ScrollProgressButton />

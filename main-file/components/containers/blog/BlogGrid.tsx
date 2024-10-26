@@ -48,16 +48,17 @@ export default BlogGrid;
 
 const BlogCard = ({ data }: any) => {
   return (
+    <>
     <div
       data-aos="fade-up"
       data-aos-delay="0"
       data-aos-duration="1500"
     >
       <div className="blog__item">
-        <Link href="blog-details" className="blog__image d-block image">
+        <Link href={`/blog/${data.id}`} className="blog__image d-block image">
           <Image style={{
             aspectRatio: '16/9'
-          }} width={100} height={100} src={data.thumbnail ? data.thumbnail : One} alt="Image" priority />
+          }} width={400} height={400} src={data.thumbnail ? data.thumbnail : One} alt="Image" priority />
 
           {/* Date of blog */}
           {/* <div className="blog-tag">
@@ -132,8 +133,9 @@ const BlogCard = ({ data }: any) => {
           <Link className="mt-25 read-more-btn" href={`/blog/${data.id}`}>
             Read More <i className="fa-regular fa-arrow-right-long"></i>
           </Link>
-        </div>
+        </div>  
       </div>
     </div>
+    </>
   )
 }

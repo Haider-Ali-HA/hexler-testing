@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,30 +17,22 @@ const Case = () => {
       <div className="container">
         <div className="d-flex flex-wrap gap-4 align-items-center justify-content-between mb-60">
           <div className="section-header">
-            <h5
-              data-aos="fade-left"
-              data-aos-delay="0"
-              data-aos-duration="1500"
-            >
+            <h5 data-aos="fade-left" data-aos-delay="0" data-aos-duration="1500">
               <Image className="me-1" src={One} alt="icon" priority />
-              FROM OUR CASE studies
+              FROM OUR CASE STUDIES
             </h5>
-            <h2
-              data-aos="fade-left"
-              data-aos-delay="200"
-              data-aos-duration="1500"
-            >
+            <h2 data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500">
               We Delivered Best Solution
             </h2>
           </div>
           <Link
             href="case"
-            className="btn-one "
+            className="btn-one"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1500"
           >
-            view All Case <i className="fa-regular fa-arrow-right-long"></i>
+            View All Case <i className="fa-regular fa-arrow-right-long"></i>
           </Link>
         </div>
       </div>
@@ -73,193 +66,81 @@ const Case = () => {
           className="swiper-wrapper"
         >
           <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Two} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Solution</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      IT Management
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
+            <div className="case__item">
+              <div className="image case__image">
+                <Image src={Two} alt="Image" priority />
               </div>
+              <div className="case__content">
+                <span className="primary-color sm-font">Solution</span>
+                <h3>
+                  <Link href="case-details" className="text-white primary-hover">
+                    IT Management
+                  </Link>
+                </h3>
+              </div>
+              <Link href="/service" className="case__btn">
+                <i className="fa-regular fa-arrow-right"></i>
+              </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Three} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Technology</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Platform Integration
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
+            <div className="case__item">
+              <div className="image case__image">
+                <Image src={Three} alt="Image" priority />
               </div>
+              <div className="case__content">
+                <span className="primary-color sm-font">Technology</span>
+                <h3>
+                  <Link href="case-details" className="text-white primary-hover">
+                    Platform Integration
+                  </Link>
+                </h3>
+              </div>
+              <Link href="/service" className="case__btn">
+                <i className="fa-regular fa-arrow-right"></i>
+              </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Four} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Solution</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Web Development
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
+            <div className="case__item">
+              <div className="image case__image">
+                <Image src={Four} alt="Image" priority />
               </div>
+              <div className="case__content">
+                <span className="primary-color sm-font">Solution</span>
+                <h3>
+                  <Link href="case-details" className="text-white primary-hover">
+                    Web Development
+                  </Link>
+                </h3>
+              </div>
+              <Link href="/service" className="case__btn">
+                <i className="fa-regular fa-arrow-right"></i>
+              </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Five} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Security</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Network Security
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
+            <div className="case__item">
+              <div className="image case__image">
+                <Image src={Five} alt="Image" priority />
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Two} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Solution</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      IT Management
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
+              <div className="case__content">
+                <span className="primary-color sm-font">Security</span>
+                <h3>
+                  <Link href="case-details" className="text-white primary-hover">
+                    Network Security
+                  </Link>
+                </h3>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Three} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Technology</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Platform Integration
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Four} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Solution</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Web Development
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <div className="case__item">
-                <div className="image case__image">
-                  <Image src={Five} alt="Image" priority />
-                </div>
-                <div className="case__content">
-                  <span className="primary-color sm-font">Security</span>
-                  <h3>
-                    <Link
-                      href="case-details"
-                      className="text-white primary-hover"
-                    >
-                      Network Security
-                    </Link>
-                  </h3>
-                </div>
-                <Link href="case-details" className="case__btn">
-                  <i className="fa-regular fa-arrow-right"></i>
-                </Link>
-              </div>
+              <Link href="/service" className="case__btn">
+                <i className="fa-regular fa-arrow-right"></i>
+              </Link>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
       <div
-        className="mt-60 text-center "
+        className="mt-60 text-center"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-duration="1500"

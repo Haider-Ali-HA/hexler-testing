@@ -16,7 +16,7 @@ import Thirteen from "@/public/images/icon/service-two-icon6.png";
 
 const ServiceItems = () => {
   return (
-    <section className="service-inner-area pt-120 pb-120">
+    <section  id="service-items" className="service-inner-area pt-120 pb-120">
       <div className="container">
         <div className="row g-4">
 

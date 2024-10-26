@@ -1,15 +1,18 @@
-import one from "@/public/images/blog/ai.jpg"
-import two from "@/public/images/blog/react.jpg"
-import three from "@/public/images/blog/web.jpg"
+import aiOne from "@/public/images/blog/ai-main.jpg"
+import aiTwo from "@/public/images/blog/ai-left-image.jpg"
+import aiThree from "@/public/images/blog/ai-right-image.jpg"
+import webOne from "@/public/images/blog/web-service.jpg"
+import webTwo from "@/public/images/blog/web-left-image.jpg"
+import webThree from "@/public/images/blog/web-right-image.jpg"
 export const blogsData = [
     {
         id: 1,
         title: "The Future of Software Development: AI and Machine Learning",
         author: "Admin",
         thumbnail:'https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnV0dXJlJTIwYWl8ZW58MHx8MHx8fDA%3D',
-        mainImg: {one},
-        imgOne: "",
-        imgTwo: "",
+        mainImg: aiOne.src,
+        imgOne:aiTwo.src, 
+        imgTwo: aiThree.src,
         date: "2023-10-04",
         description1: "Artificial intelligence and machine learning are rapidly transforming the software development industry. These technologies are enabling developers to automate routine tasks, create intelligent applications, and gain valuable insights from data. In this blog post, we will explore the latest trends in AI and ML for software development, discuss their key applications, and provide practical tips for leveraging these technologies effectively.",
         description2: "One of the most significant benefits of AI and ML in software development is the ability to automate repetitive tasks. By automating these tasks, developers can free up their time to focus on more creative and strategic work. Additionally, AI and ML can help to improve the accuracy and efficiency of software development processes. For example, machine learning algorithms can be used to identify and fix bugs early in the development cycle.",
@@ -26,9 +29,9 @@ export const blogsData = [
         title: "Building Scalable Web Applications with Microservices Architecture",
         author: "Admin",
         thumbnail:'https://plus.unsplash.com/premium_photo-1683288706548-e8b6bb72fe86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwY2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D',
-        mainImg: {two},
-        imgOne: "",
-        imgTwo:  "",
+        mainImg: webOne.src,
+        imgOne: webTwo.src,
+        imgTwo:  webThree.src,
         date: "2023-10-05",
         description1: "In today's fast-paced digital world, it's essential for web applications to be scalable and resilient. Microservices architecture is a modern approach to software development that can help you achieve these goals. By breaking down your application into smaller, independent services, you can improve scalability, flexibility, and maintainability.",
         description2: "One of the key benefits of microservices architecture is that it allows you to scale your application independently. This means that you can add or remove resources as needed to handle increased traffic or workload. Additionally, microservices architecture can improve resilience by making your application less susceptible to failures. If one service fails, the others can continue to operate.",
@@ -45,7 +48,7 @@ export const blogsData = [
         title: "Mastering React: A Comprehensive Guide",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  {three},
+        mainImg:  '',
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-06",
@@ -64,7 +67,7 @@ export const blogsData = [
         title: "The Importance of Cybersecurity in the Digital Age",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  {one},
+        mainImg:  '',
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-07",
@@ -83,7 +86,7 @@ export const blogsData = [
         title: "The Benefits of DevOps for Software Development",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  {one},
+        mainImg:  '',
         imgOne:  "",
         imgTwo:  "",
         date: "2023-10-08",
