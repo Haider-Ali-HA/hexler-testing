@@ -6,7 +6,7 @@ import Two from "@/public/images/blog/blog-single-sm1.jpg";
 import Three from "@/public/images/blog/blog-single-sm2.jpg";
 import Four from "@/public/images/blog/comment-image1.png";
 import Five from "@/public/images/blog/comment-image2.png";
-import Six from "@/public/images/blog/post-sm1.png";
+import Six from "@/public/images/blog/web.jpg";
 import Seven from "@/public/images/blog/post-sm2.png";
 import Eight from "@/public/images/blog/post-sm3.png";
 

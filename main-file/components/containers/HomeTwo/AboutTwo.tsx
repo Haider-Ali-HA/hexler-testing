@@ -104,7 +104,7 @@ const AboutTwo = () => {
                 // data-aos-delay="400"
                 // data-aos-duration="1500"
               >
-                We are dedicated to providing smart business solutions that help companies succeed. By using the latest technology and understanding your unique needs, we create efficient strategies that drive growth. Our collaborative approach ensures we are with you every step of the way.
+              Empower your business with dependable IT solutions designed to foster growth and innovation. Experience seamless integration and support, ensuring your success in a rapidly evolving digital landscape.
               </p>
             </div>
             <div

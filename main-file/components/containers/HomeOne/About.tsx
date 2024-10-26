@@ -78,7 +78,7 @@ const About = () => {
                   data-aos-delay="400"
                   data-aos-duration="1500"
                 >
-                  We are dedicated to providing smart business solutions that help companies succeed. By using the latest technology and understanding your unique needs, we create efficient strategies that drive growth. Our collaborative approach ensures we are with you every step of the way.
+               Unlock your potential with our intelligent business solutions, tailored to meet your unique challenges. We are committed to driving efficiency and growth, transforming obstacles into opportunities for success
                 </p>
               </div>
               <div

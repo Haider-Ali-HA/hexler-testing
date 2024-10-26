@@ -1,10 +1,13 @@
+import one from "@/public/images/blog/ai.jpg"
+import two from "@/public/images/blog/react.jpg"
+import three from "@/public/images/blog/web.jpg"
 export const blogsData = [
     {
         id: 1,
         title: "The Future of Software Development: AI and Machine Learning",
         author: "Admin",
         thumbnail:'https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnV0dXJlJTIwYWl8ZW58MHx8MHx8fDA%3D',
-        mainImg: "",
+        mainImg: {one},
         imgOne: "",
         imgTwo: "",
         date: "2023-10-04",
@@ -23,7 +26,7 @@ export const blogsData = [
         title: "Building Scalable Web Applications with Microservices Architecture",
         author: "Admin",
         thumbnail:'https://plus.unsplash.com/premium_photo-1683288706548-e8b6bb72fe86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwY2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D',
-        mainImg: "",
+        mainImg: {two},
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-05",
@@ -42,7 +45,7 @@ export const blogsData = [
         title: "Mastering React: A Comprehensive Guide",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  "",
+        mainImg:  {three},
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-06",
@@ -61,7 +64,7 @@ export const blogsData = [
         title: "The Importance of Cybersecurity in the Digital Age",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  "",
+        mainImg:  {one},
         imgOne: "",
         imgTwo:  "",
         date: "2023-10-07",
@@ -80,7 +83,7 @@ export const blogsData = [
         title: "The Benefits of DevOps for Software Development",
         author: "Admin",
         thumbnail:'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600',
-        mainImg:  "",
+        mainImg:  {one},
         imgOne:  "",
         imgTwo:  "",
         date: "2023-10-08",
