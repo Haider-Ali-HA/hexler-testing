@@ -14,6 +14,7 @@ const Team = () => {
             // data-aos="fade-up"
             // data-aos-delay="0"
             // data-aos-duration="1500"
+            //sd
           >
             <svg
               className="me-1"
