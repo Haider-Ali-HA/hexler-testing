@@ -6,6 +6,7 @@ import Three from "@/public/images/shape/about-circle-helper.png";
 import Four from "@/public/images/about/about.jpg";
 import Five from "@/public/images/about/about1.jpg";
 import Six from "@/public/images/shape/about-two-circle.png";
+import Eight from "@/public/images/about/about4.png"
 
 const AboutTwo = () => {
   return (
@@ -39,10 +40,10 @@ const AboutTwo = () => {
                 />
               </div>
               <div className="image big-image">
-                <Image src={Four} alt="Image" priority />
+                <Image src={Eight} alt="Image" priority />
               </div>
               <div className="image sm-image">
-                <Image src={Five} alt="Image" priority />
+                <Image src={Five} alt="Image" id="about-two-image" priority />
               </div>
               <div className="circle-shape">
                 <Image

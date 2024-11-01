@@ -45,14 +45,17 @@ const OffCanvasDark = ({ toggleMenu, handleToggleMenu }: any) => {
       <div className="mobile-menu overflow-hidden">
         <nav className="mean-nav">
           <ul>
-            <li className="has-megamenu">
+          <li>
+              <Link href="/">Home</Link>
+
+            {/* <li className="has-megamenu">
               <a
                 className={`drop ${isSubMenuButton("home")}`}
                 onClick={() => handleSubmenu("home")}
               >
                 Home
-              </a>
-              <ul
+              </a> */}
+              {/* <ul
                 className={`sub-menu mega-menu menu-image ${isSubMenuOpen(
                   "home"
                 )}`}
@@ -104,7 +107,7 @@ const OffCanvasDark = ({ toggleMenu, handleToggleMenu }: any) => {
                     <h6 className="text-white">Home Dark</h6>
                   </div>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li>
               <Link href="about-us">About</Link>

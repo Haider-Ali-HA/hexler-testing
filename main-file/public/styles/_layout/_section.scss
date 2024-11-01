@@ -2052,3 +2052,12 @@
 	// height: 2rem;
 	// object-fit: cover;
 }
+
+@media screen and (max-width: 480px) {
+	#about-section{
+		display: none !important;
+	}
+	#about-two-image{
+		display: none !important;
+	}
+}

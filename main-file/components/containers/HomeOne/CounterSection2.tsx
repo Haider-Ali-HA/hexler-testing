@@ -23,7 +23,7 @@ const counters=[{
 
 const CounterSection2 = () => {
   return (
-    <section className="counter-area">
+    <section  className="counter-area">
       <div className="container">
         <div  className="counter__wrp gradient-bg">
           <div
@@ -43,8 +43,8 @@ const CounterSection2 = () => {
               <div style={{paddingTop:'3rem',marginTop:'-1rem'}} className="content">
                 <h3>
                   <span style={{lineHeight:'10px',color:'white'}} className="count">{item.count}</span><br />
-                  {item.label}
                 </h3>
+                <h3 className="pt-10">{item.label}</h3>
                 <p className="text-white">{item.description}</p>
               </div>
             </div>

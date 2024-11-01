@@ -43,7 +43,10 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
       <div className="mobile-menu overflow-hidden">
         <nav className="mean-nav">
           <ul>
-            <li className="has-megamenu">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            {/* <li className="has-megamenu">
               <a
                 className={`drop ${isSubMenuButton("home")}`}
                 onClick={() => handleSubmenu("home")}
@@ -103,7 +106,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link href="about-us">About</Link>
             </li>
@@ -116,16 +119,17 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               </a>
               <ul className={`sub-menu ${isSubMenuOpen("services")}`}>
                 <li>
-                  <Link href="service-solutions">IT Solutions</Link>
+                  <Link href="/service">IT Services</Link>
                 </li>
                 <li>
-                  <Link href="service">IT Services</Link>
+                  <Link href="/service-solutions">IT Solutions</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="service-details">Service Details</Link>
-                </li>
+                </li> */}
               </ul>
             </li>
+            {/*             
             <li>
               <a
                 className={`drop ${isSubMenuButton("pages")}`}
@@ -159,8 +163,13 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   <Link href="error">404 Error</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
+
+
             <li>
+              <Link href="/blog">Blogs</Link>
+            </li>
+            {/* <li>
               <a
                 className={`drop ${isSubMenuButton("blog")}`}
                 onClick={() => handleSubmenu("blog")}
@@ -178,7 +187,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                   <Link href="blog-details">Blog Details</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link href="contact">Contact</Link>
             </li>
@@ -200,7 +209,7 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
         </li>
       </ul>
       <div className="social-icon mt-20">
-        <Link  target="_blank" href="https://www.instagram.com/hexlertech/">
+        <Link target="_blank" href="https://www.instagram.com/hexlertech/">
           <i className="fa-brands fa-instagram"></i>
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/company/hexler-tech/l">
