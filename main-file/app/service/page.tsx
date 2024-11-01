@@ -8,7 +8,7 @@ import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     const handleScroll = () => {
       const element = document.getElementById('service-items');
@@ -45,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

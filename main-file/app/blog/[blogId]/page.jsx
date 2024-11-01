@@ -9,7 +9,7 @@ import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import { blogsData } from "@/constants/blogsData";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [blog, setBlog] =useState(null);
   const [blogFetchingError, setBlogFetchingError] = useState(false);
 
@@ -35,4 +35,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;
