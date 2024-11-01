@@ -10,7 +10,7 @@ import Five from "@/public/images/icon/service-icon2.png";
 import Six from "@/public/images/icon/service-icon3.png";
 
 const Service = () => {
-  const [isOverviewOpen, setOverviewOpen] = useState(1);
+  const [isOverviewOpen, setOverviewOpen] =useState(1);
 
   return (
     <section className="service-area pt-120 pb-120" id="service-section">
