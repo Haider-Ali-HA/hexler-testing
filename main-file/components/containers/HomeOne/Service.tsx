@@ -13,7 +13,7 @@ const Service = () => {
   const [isOverviewOpen, setOverviewOpen] =useState(1);
 
   return (
-    <section className="service-area pt-120 pb-120" id="service-section">
+    <section className="service-area pt-100 pb-120" id="service-section">
       <div className="service__shape " data-aos="fade-right">
         <Image className="sway_Y__animation" src={One} alt="shape" priority />
       </div>

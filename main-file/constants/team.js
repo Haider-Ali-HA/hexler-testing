@@ -1,7 +1,7 @@
 export default team = [ 
     {
       name: "Saif Orakzai",
-      role: "CEO"
+      role: "CMO"
     },
     {
       name: "Sohaib Ahmed Sipra",

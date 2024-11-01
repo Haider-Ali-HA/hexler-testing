@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import One from "@/public/images/shape/service-two-item-shape.png";
-import Two from "@/public/images/service/mobile-app-development.jpg";
-import Three from "@/public/images/service/software-testing.jpg";
-import Four from "@/public/images/service/website-service.jpg";
+import Two from "@/public/images/service/mobile-app-development.png";
+import Three from "@/public/images/service/software-testing.png";
+import Four from "@/public/images/service/website-service.png";
 import Five from "@/public/images/service/service-image4.jpg";
-import Six from "@/public/images/service/devOps.jpg";
-import Seven from "@/public/images/service/ui-ux-image.jpg";
-import Eight from "@/public/images/service/game-development.jpg";
+import Six from "@/public/images/service/devOps.png";
+import Seven from "@/public/images/service/ui-ux-image.png";
+import Eight from "@/public/images/service/game-development.png";
 import Nine from "@/public/images/icon/service-two-icon2.png";
 import Ten from "@/public/images/icon/service-two-icon3.png";
 import Eleven from "@/public/images/icon/service-two-icon4.png";
@@ -22,7 +22,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image ">
+              <div className="service-image ">
                 <Image className="" src={Four} alt="Image" priority />
               </div>
               <div className="service-two__content">
@@ -50,7 +50,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
+              <div className="service-image">
                 <Image src={Two} alt="Image" priority />
               </div>
               <div className="service-two__content">
@@ -78,7 +78,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
+              <div className="service-image">
                 <Image src={Seven} alt="Image" priority />
               </div>
               <div className="service-two__content">
@@ -106,7 +106,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
+              <div className="service-image">
                 <Image src={Three} alt="Image" priority />
               </div>
               <div className="service-two__content">
@@ -135,7 +135,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
+              <div className="service-image">
                 <Image src={Six} alt="Image" priority />
               </div>
               <div className="service-two__content">
@@ -164,7 +164,7 @@ const ServiceItems = () => {
 
           <div className="col-lg-4 col-md-6">
             <div className="service-two__item">
-              <div className="image">
+              <div className="service-image">
                 <Image src={Eight} alt="Image" priority />
               </div>
               <div className="service-two__content">

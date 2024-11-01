@@ -24,8 +24,8 @@ const page = () => {
       <TopHeader />
       <Header />
       <Banner />
-      <Service />
       <SecondSection/>
+      <Service />
       <About />
       <CounterSection2 />
       {/* <Case /> */}

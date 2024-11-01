@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="social-icon-2 ">
               <Link style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="" href="https://www.trustpilot.com/review/hexlertech.com" target="_blank">
                 <i className="fa-star-sharp fa-regular"></i>
-                <p style={{paddingLeft:'0.2rem'}}>&nbsp;Trustpilot  </p>
+                <p style={{ paddingLeft: '0.2rem' }}>&nbsp;Trustpilot  </p>
               </Link>
             </div>
           </div>
@@ -176,11 +176,11 @@ const Footer = () => {
               Islamabad, Pakistan
             </p> */}
             <ul className="footer-contact">
-            <li>
+              <li>
                 <i className="fa-regular fa-location-check"></i>
                 <div className="info">
                   <p>Glen Allen, VA 23060, USA <br />
-                  Islamabad, Pakistan</p>
+                    Islamabad, Pakistan</p>
                 </div>
               </li>
 
@@ -191,7 +191,7 @@ const Footer = () => {
                   <p>Mon - Sat: 10.00 AM - 7.00 PM</p>
                 </div>
               </li>
-              
+
               <li>
                 <i className="fa-duotone fa-phone"></i>
                 <div className="info">

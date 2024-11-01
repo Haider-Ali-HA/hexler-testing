@@ -21,7 +21,7 @@ const page = () => {
       <CmnBanner title="About Us" />
       <AboutSecondSection />
       <AboutTwo />
-      <Offer /> 
+      {/* <Offer />  */}
       {/* <Brand /> */}
       <AboutThirdSection />
       <Case />

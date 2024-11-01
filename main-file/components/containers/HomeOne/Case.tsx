@@ -73,14 +73,14 @@ const Case = () => {
               <div className="case__content">
                 <span className="primary-color sm-font">Solution</span>
                 <h3>
-                  <Link href="case-details" className="text-white primary-hover">
+                  <div style={{cursor:"pointer"}} className="text-white primary-hover">
                     IT Management
-                  </Link>
+                  </div>
                 </h3>
               </div>
-              <Link href="/service" className="case__btn">
+              {/* <Link href="/service" className="case__btn">
                 <i className="fa-regular fa-arrow-right"></i>
-              </Link>
+              </Link> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -91,14 +91,14 @@ const Case = () => {
               <div className="case__content">
                 <span className="primary-color sm-font">Technology</span>
                 <h3>
-                  <Link href="case-details" className="text-white primary-hover">
+                  <div style={{cursor:"pointer"}} className="text-white primary-hover">
                     Platform Integration
-                  </Link>
+                  </div>
                 </h3>
               </div>
-              <Link href="/service" className="case__btn">
+              {/* <Link href="/service" className="case__btn">
                 <i className="fa-regular fa-arrow-right"></i>
-              </Link>
+              </Link> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -109,14 +109,14 @@ const Case = () => {
               <div className="case__content">
                 <span className="primary-color sm-font">Solution</span>
                 <h3>
-                  <Link href="case-details" className="text-white primary-hover">
+                  <div style={{cursor:"pointer"}} className="text-white primary-hover">
                     Web Development
-                  </Link>
+                  </div>
                 </h3>
               </div>
-              <Link href="/service" className="case__btn">
+              {/* <Link href="/service" className="case__btn">
                 <i className="fa-regular fa-arrow-right"></i>
-              </Link>
+              </Link> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -127,14 +127,14 @@ const Case = () => {
               <div className="case__content">
                 <span className="primary-color sm-font">Security</span>
                 <h3>
-                  <Link href="case-details" className="text-white primary-hover">
+                  <div style={{cursor:"pointer"}} className="text-white primary-hover">
                     Network Security
-                  </Link>
+                  </div>
                 </h3>
               </div>
-              <Link href="/service" className="case__btn">
+              {/* <Link href="/service" className="case__btn">
                 <i className="fa-regular fa-arrow-right"></i>
-              </Link>
+              </Link> */}
             </div>
           </SwiperSlide>
         </Swiper>

@@ -167,7 +167,7 @@ const TeamItems = () => {
                     Sohail Khan
                   </Link>
                 </h4>
-                <span className="text-white">CBO</span>
+                <span className="text-white">CMO</span>
               </div>
               <div className="team__share">
                 <ul>

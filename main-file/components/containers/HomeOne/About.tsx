@@ -11,6 +11,7 @@ import Three from "@/public/images/icon/section-title.png";
 import Four from "@/public/images/icon/about-icon1.png";
 import Five from "@/public/images/icon/about-icon2.png";
 import Six from "@/public/images/about/about-info.png";
+import Seven from "@/public/images/about/about2.jpg"
 
 const About = () => {
   const [isOpen, setOpen] = useState(false);
@@ -36,7 +37,7 @@ const About = () => {
             >
               <div className="about__left-item">
                 <div className="image big-image">
-                  <Image src={One} alt="Image" priority />
+                  <Image src={Seven} alt="Image" priority />
                 </div>
                 <div className="image sm-image">
                   <div className="video__btn-wrp">
@@ -136,7 +137,7 @@ const About = () => {
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
         isOpen={isOpen}
-        videoId="iVqz_4M5mA0"
+        videoId="FE8NvDXbStk"
         onClose={() => setOpen(false)}
       />
     </>

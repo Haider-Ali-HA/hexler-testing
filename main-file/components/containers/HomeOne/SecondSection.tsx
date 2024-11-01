@@ -2,7 +2,7 @@ import React from 'react'
 
 const SecondSection = () => {
     return (
-        <section className="service-area pt-190 pb-120 " id="second-section" >
+        <section className="service-area pt-160  " id="second-section" >
             <div className="container">
                 <div className="row g-5">
 
