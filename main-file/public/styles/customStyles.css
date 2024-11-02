@@ -11,13 +11,22 @@
 }
 .about-second-section-header{
     font-size: 3rem;
-    line-height: 1;
+    line-height: 48px;
   }
 
 @media screen and  (max-width: 768px) {
     .second-section-header{
         font-size: 2rem;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .about-second-section-header{
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-align: center;
+    }
+    
 }
 
 
