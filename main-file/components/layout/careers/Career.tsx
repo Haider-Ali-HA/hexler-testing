@@ -16,7 +16,7 @@ const Career = () => {
                 <div className="career-header ">
                     <div className="career-title" >
                         <div className="career-title-text">
-                            <h2 className=" career-heading" style={{ fontSize: '4rem', lineHeight: '1' }}>
+                            <h2 className="career-section-header" >
                                 Powering Careers <br />In Technical Fields
                             </h2>
                         </div>
