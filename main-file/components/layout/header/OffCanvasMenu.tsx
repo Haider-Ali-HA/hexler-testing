@@ -108,14 +108,14 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
               </ul>
             </li> */}
             <li>
-              <Link href="about-us">About</Link>
+              <Link href="about-us">About Us</Link>
             </li>
             <li>
               <a
                 className={`drop ${isSubMenuButton("services")}`}
                 onClick={() => handleSubmenu("services")}
               >
-                Services
+                Our Services
               </a>
               <ul className={`sub-menu ${isSubMenuOpen("services")}`}>
                 <li>
@@ -129,6 +129,15 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
                 </li> */}
               </ul>
             </li>
+
+            <li>
+              <Link href="/projects">Our Projects</Link>
+            </li>
+
+            <li>
+              <Link href="/team">Our Team</Link>
+            </li>
+
             {/*             
             <li>
               <a
@@ -169,6 +178,11 @@ const OffCanvasMenu = ({ toggleMenu, handleToggleMenu }: any) => {
             <li>
               <Link href="/blog">Blogs</Link>
             </li>
+
+            <li>
+              <Link href="/careers">Careers</Link>
+            </li>
+
             {/* <li>
               <a
                 className={`drop ${isSubMenuButton("blog")}`}
