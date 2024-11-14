@@ -6,7 +6,7 @@ import Three from "@/public/images/shape/about-circle-helper.png";
 import Four from "@/public/images/about/about.jpg";
 import Five from "@/public/images/about/about1.jpg";
 import Six from "@/public/images/shape/about-two-circle.png";
-import Eight from "@/public/images/about/about4.png"
+import Eight from "@/public/images/about/about4.png";
 
 const AboutTwo = () => {
   return (
@@ -58,7 +58,7 @@ const AboutTwo = () => {
           <div className="col-xl-6">
             <div className="section-header mb-40">
               <h5
-                className=""
+                className="mt-3"
                 // data-aos="fade-up"
                 // data-aos-delay="0"
                 // data-aos-duration="1500"
@@ -105,7 +105,10 @@ const AboutTwo = () => {
                 // data-aos-delay="400"
                 // data-aos-duration="1500"
               >
-              Empower your business with dependable IT solutions designed to foster growth and innovation. Experience seamless integration and support, ensuring your success in a rapidly evolving digital landscape.
+                Empower your business with dependable IT solutions designed to
+                foster growth and innovation. Experience seamless integration
+                and support, ensuring your success in a rapidly evolving digital
+                landscape.
               </p>
             </div>
             <div
@@ -140,7 +143,6 @@ const AboutTwo = () => {
               <Link href="about-us" className="btn-one">
                 About Us <i className="fa-regular fa-arrow-right-long"></i>
               </Link>
-             
             </div>
           </div>
         </div>

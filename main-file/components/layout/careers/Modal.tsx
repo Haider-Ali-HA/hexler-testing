@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import '@/public/styles/career.css';

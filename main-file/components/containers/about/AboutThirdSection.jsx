@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
+
 const AboutSecondSection = () => {
     return (
         <section className="service-area pt-20 pb-64 " id="second-section" >

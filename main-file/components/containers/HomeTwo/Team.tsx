@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import One from "@/public/images/team/man1.jpg";
-import Two from "@/public/images/team/man8.jpg";
-import Three from "@/public/images/team/man10.jpg";
+import One from "@/public/images/team/saif.png";
+import Two from "@/public/images/team/sohaib.png";
+import Three from "@/public/images/team/hassan.png";
 
 const Team = () => {
   return (
@@ -72,7 +72,7 @@ const Team = () => {
                 </h4>
                 <span className="text-white">CEO</span>
               </div>
-              <div className="team__share">
+              {/* <div className="team__share">
                 <ul>
                   <li>
                     <Link href="/">
@@ -93,7 +93,7 @@ const Team = () => {
                 <button>
                   <i className="fa-sharp fa-light fa-share-nodes"></i>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div
@@ -114,7 +114,7 @@ const Team = () => {
                 </h4>
                 <span className="text-white">CTO</span>
               </div>
-              <div className="team__share">
+              {/* <div className="team__share">
                 <ul>
                   <li>
                     <Link href="/">
@@ -135,7 +135,7 @@ const Team = () => {
                 <button>
                   <i className="fa-sharp fa-light fa-share-nodes"></i>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div
@@ -156,7 +156,7 @@ const Team = () => {
                 </h4>
                 <span className="text-white">CFO</span>
               </div>
-              <div className="team__share">
+              {/* <div className="team__share">
                 <ul>
                   <li>
                     <Link href="/">
@@ -177,7 +177,7 @@ const Team = () => {
                 <button>
                   <i className="fa-sharp fa-light fa-share-nodes"></i>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

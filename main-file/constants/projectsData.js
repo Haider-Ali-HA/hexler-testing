@@ -10,8 +10,8 @@ export const projectsData = [
         name: "NSTP",
         description: "Created management system.",
         path: "#",
-        image: "",
-        categories: ["App Dev", "Full Stack"]
+        image: "./images/project/NSTP.png",
+        categories: ["App Dev", "Full Stack", "Designing"]
     },
     {
         name: "Churn Station",
@@ -21,24 +21,24 @@ export const projectsData = [
         categories: ["App Dev"]
     },
     {
-        name: "Project X",
+        name: "Goodwill Cargo",
         description: "Developed a blogging platform.",
         path: "#",
-        image: "",
+        image: "/images/project/goodwill.png",
         categories: ["WordPress", "Full Stack"]
     },
     {
         name: "Shopify Store",
         description: "Created an e-commerce site.",
         path: "#",
-        image: "",
+        image: "/images/project/Monochrome.png",
         categories: ["Shopify", "Full Stack"]
     },
     {
-        name: "Mobile App Y",
-        description: "Developed a mobile application.",
+        name: "Nimbus 360 Solutions",
+        description: "Developed a Web application.",
         path: "#",
-        image: "",
+        image: "./images/project/nimbus.png",
         categories: ["App Dev"]
     },
     {
@@ -53,7 +53,7 @@ export const projectsData = [
         description: "Designed a personal portfolio website.",
         path: "#",
         image: "",
-        categories: ["WordPress", "Full Stack"]
+        categories: ["WordPress", "Full Stack", "Designing"]
     },
     {
         name: "Task Manager App",
