@@ -10,7 +10,7 @@ import Five from "@/public/images/icon/service-icon2.png";
 import Six from "@/public/images/icon/service-icon3.png";
 
 const Service = () => {
-  const [isOverviewOpen, setOverviewOpen] =useState(1);
+  const [isOverviewOpen, setOverviewOpen] = useState(1);
 
   return (
     <section className="service-area pt-100 pb-120" id="service-section">
@@ -127,7 +127,7 @@ const Service = () => {
                 <Link href="service/game-development">Game Development</Link>
               </h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae eatae alias similique, magnam velit repellat architecto eum error ex quod mollitia deserunt consectetur?
+                Turn your ideas into immersive and interactive experiences with our game development services. We specialize in creating visually captivating and engaging games for all platforms.
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ const Service = () => {
                 <Link href="service/ui-ux-design">UI/UX Design</Link>
               </h4>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe impedit unde magnam quam eos quasi beatae provident molestias ad, pariatur, nihil iusto sunt earum et?
+                Enhance user satisfaction with intuitive and aesthetically pleasing designs. Our UI/UX services are tailored to create seamless and delightful experiences for your users.
               </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ const Service = () => {
                 <Link href="service/devops">DevOps Solutions</Link>
               </h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae odit omnis nihil. Animi in dolor tenetur! Obcaecati iusto delectus soluta dignissimos vero
+                Accelerate your development pipeline with our DevOps solutions. We help streamline your operations, ensuring smooth integration and delivery for faster product releases.
               </p>
             </div>
           </div>

@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         name: "Soft Swirl",
-        description: "Developed xyz",
+        description: "",
         path: "#",
         image: "",
         categories: ["Full Stack"]
@@ -15,7 +15,7 @@ export const projectsData = [
     },
     {
         name: "Churn Station",
-        description: "Built a tool xyz",
+        description: "",
         path: "#",
         image: "",
         categories: ["App Dev"]
@@ -47,13 +47,6 @@ export const projectsData = [
         path: "#",
         image: "",
         categories: ["Full Stack", "App Dev"]
-    },
-    {
-        name: "Personal Portfolio",
-        description: "Designed a personal portfolio website.",
-        path: "#",
-        image: "",
-        categories: ["WordPress", "Full Stack", "Designing"]
     },
     {
         name: "Task Manager App",
