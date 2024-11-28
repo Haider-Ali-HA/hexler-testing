@@ -3,7 +3,14 @@ import axios from 'axios';
 export const projectServices = {
   async getProjects() {
     try {
-      const response = await axios.get('/api/projects');
+      const response = await axios.get('/api/projects',{
+         headers: {
+          'Cache-Control': 'no-store',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      }
+        );
       if (response.data?.projects) {
         return { success: true, data: response.data.projects };
       }
@@ -18,7 +25,14 @@ export const projectServices = {
   // Fetch a single project by its ID
   async getSingleProject(projectId: string) {
     try {
-      const response = await axios.get(`/api/projects/${projectId}`);
+      const response = await axios.get(`/api/projects/${projectId}`,{
+         headers: {
+          'Cache-Control': 'no-store',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      }
+);
 
       if (response.data?.project) {
         return { success: true, data: response.data.project };
