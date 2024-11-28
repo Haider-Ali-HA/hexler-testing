@@ -109,7 +109,7 @@ const Projects = () => {
 
                       <div className="view-project-listing-wrapper">
                         <h3 className="project-title">{project.projectName}</h3>
-                        <p style={{ textAlign: "center" }}>{project.projectDescription}</p>
+                        <p style={{ textAlign: "center" }}>{project.projectTagline}</p>
                       </div>
                     </Link>
                   ))
