@@ -32,21 +32,23 @@ const Projects = () => {
         ...Array.from(
           new Map(
             result.data
-              .flatMap((item: Project) => item.projectCategory)
+              .flatMap((item: Project) => item.projectCategory.name)
               .map((category: string) => [category, true])
           ).keys(),
         ),
       ];
+      console.log("all categories", allCategories);
       setCategories(allCategories);
 
       // Filtering projects based on the selected category
       const projectsAfterFilteration =
         selectedCategory === "All"
           ? result.data
-          : result.data.filter((project: Project) =>
-            project.projectCategory.includes(selectedCategory)
+          : projects.filter(
+            (project: Project) => project.projectCategory.name === selectedCategory
           );
       setFilteredProjects(projectsAfterFilteration);
+
       setLoading(false);
     } else {
       setError(result.message);

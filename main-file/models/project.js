@@ -1,5 +1,5 @@
 import mongoose, { Schema} from 'mongoose';
-
+import ProjectCategory from './projectCategory';
 // Define the Mongoose schema
 const projectSchema = new Schema({
   projectName: {
@@ -14,7 +14,8 @@ const projectSchema = new Schema({
     type: String,
   },
   projectCategory: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: 'ProjectCategory',
     required: [true, 'Project category is required'],
   },
   projectImage: {
