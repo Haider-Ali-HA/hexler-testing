@@ -5,6 +5,7 @@ import '@/public/styles/career.css';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
 
+
 interface ModalComponentProps {
     show: boolean;
     setShow: (show: boolean) => void;
@@ -26,7 +27,7 @@ interface FormData {
     projectLinks: string;
     linkedin: string;
     github: string;
-    resume: File | null;
+    resume: string;
 }
 
 const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showCompleted, setShowCompleted , job}) => {
@@ -43,7 +44,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         projectLinks: '',
         linkedin: '',
         github: '',
-        resume: null,
+        resume: '',
     });
     const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
     const [isLinkedInValid, setIsLinkedInValid] = useState<boolean>(true);
@@ -81,14 +82,14 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         setFormData({ ...formData, gender: value });
     };
 
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const files = e.target.files;
-        if (files && files.length > 0) {
-            setFormData({ ...formData, resume: files[0] });
-        } else {
-            setFormData({ ...formData, resume: null });
-        }
-    };
+    // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     const files = e.target.files;
+    //     if (files && files.length > 0) {
+    //         setFormData({ ...formData, resume: files[0] });
+    //     } else {
+    //         setFormData({ ...formData, resume: null });
+    //     }
+    // };
 
 
     const validateEmail = (email: string) => {
@@ -132,10 +133,10 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         try {
             console.log(1)
             //@ts-ignore
-            const res = await emailjs.send(serviceID!, templateID!, formData, options);
+            // const res = await emailjs.send(serviceID!, templateID!, formData, options);
             console.log(2)
-            console.log(res)
-            if (res.status === 200 ) {
+            // console.log(res)
+            // if (res.status === 200 ) {
               toast.success('Form submitted successfully!');
               setFormData({
                 jobTitle: '',
@@ -150,9 +151,9 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                 projectLinks: '',
                 linkedin: '',
                 github: '',
-                resume: null,
+                resume: '',
             });
-            };
+            // };
           } catch (error) {
             toast.error("Some Error Occured...");
           };
@@ -349,7 +350,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                             {!isGitHubValid && <p className="error-message">Invalid GitHub URL.</p>} {/* Error message */}
                         </div>
                     </div>
-
+{/* 
                     <div className="input-group">
                         <div className="input-column">
                             <label>Resume</label>
@@ -361,11 +362,25 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                                 required
                             />
                         </div>
+                    </div> */}
+                      <div className="input-group">
+                        <div className="input-column">
+                            <label>Resume</label>
+                            <input
+                                type="text"
+                                name="resume"
+                                className="input"
+                                placeholder="Enter Resume"
+                                value={formData.resume}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                     </div>
 
                     <div className="modal-footer">
                         <button type="submit" className="submit-button">
-                            SUBMIT
+                            SUBMIT APPLICATION
                         </button>
                     </div>
                 </form>
