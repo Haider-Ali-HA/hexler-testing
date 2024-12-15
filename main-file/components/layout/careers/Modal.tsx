@@ -4,6 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import '@/public/styles/career.css';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import { careerServices } from '@/services/careerServices';
 
 
 interface ModalComponentProps {
@@ -12,6 +13,7 @@ interface ModalComponentProps {
     showCompleted: boolean;
     setShowCompleted: (showCompleted: boolean) => void;
     job: string;
+    jobId: string | null;
 }
 
 interface FormData {
@@ -28,9 +30,10 @@ interface FormData {
     linkedin: string;
     github: string;
     resume: string;
+    career?: string | null;
 }
 
-const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showCompleted, setShowCompleted , job}) => {
+const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showCompleted, setShowCompleted, job, jobId }) => {
     const [formData, setFormData] = useState<FormData>({
         jobTitle: '',
         firstName: '',
@@ -45,16 +48,19 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         linkedin: '',
         github: '',
         resume: '',
+        career: jobId
     });
     const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
     const [isLinkedInValid, setIsLinkedInValid] = useState<boolean>(true);
     const [isGitHubValid, setIsGitHubValid] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
+    const [loading, setLoading] = useState<boolean>(false);
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
-    
+
         // Validate based on the field being changed
         switch (name) {
             case 'email':
@@ -71,7 +77,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
         }
     };
 
-    
+
     const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -113,67 +119,91 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
-        // Checking for required fields
-        for (const key in formData) {
-            if(key!='projectLinks' && key!='jobTitle' && key!='resume'){
-            if (formData[key as keyof FormData] === '') {
-                alert(`${key} is required`);
-                return;
-            }
-        }
-        }
-
-        formData.jobTitle = job;
-
-        const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-        const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-        const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
-
+        setLoading(true);
+    
         try {
-            console.log(1)
-            //@ts-ignore
-            // const res = await emailjs.send(serviceID!, templateID!, formData, options);
-            console.log(2)
-            // console.log(res)
-            // if (res.status === 200 ) {
-              toast.success('Form submitted successfully!');
-              setFormData({
-                jobTitle: '',
-                firstName: '',
-                lastName: '',
-                gender: 'male',
-                dob: '',
-                phone: '',
-                email: '',
-                address: '',
-                city: '',
-                projectLinks: '',
-                linkedin: '',
-                github: '',
-                resume: '',
-            });
-            // };
-          } catch (error) {
-            toast.error("Some Error Occured...");
-          };
-
-        console.log("Submitted Data:", formData);
-       
-
-        setShowCompleted(true);
-        setShow(false);
+            // Checking for required fields
+            for (const key in formData) {
+                if (key !== 'projectLinks' && key !== 'jobTitle' && key !== 'resume') {
+                    if (formData[key as keyof FormData] === '') {
+                        toast.error(`${key} is required`);
+                        setLoading(false);
+                        return;
+                    }
+                }
+            }
+    
+            formData.jobTitle = job;
+            formData.career = jobId;
+    
+            const response = await careerServices.submitApplication(formData);
+            
+            if (response.success) {
+                toast.success('Application submitted successfully!');
+                setFormData({
+                    jobTitle: '',
+                    firstName: '',
+                    lastName: '',
+                    gender: 'male',
+                    dob: '',
+                    phone: '',
+                    email: '',
+                    address: '',
+                    city: '',
+                    projectLinks: '',
+                    linkedin: '',
+                    github: '',
+                    resume: '',
+                    career: null
+                });
+                setShowCompleted(true);
+                setShow(false);
+            } else {
+                toast.error(response.message);
+            }
+        } catch (error) {
+            toast.error('An error occurred while submitting the application');
+        } finally {
+            setLoading(false);
+        }
     };
+    
+    const resetForm = () => {
+        setFormData({
+            jobTitle: '',
+            firstName: '',
+            lastName: '',
+            gender: 'male',
+            dob: '',
+            phone: '',
+            email: '',
+            address: '',
+            city: '',
+            projectLinks: '',
+            linkedin: '',
+            github: '',
+            resume: '',
+        });
+        setIsEmailValid(true);
+        setIsGitHubValid(true);
+        setIsLinkedInValid(true);
+    }
 
     return (
         <>
-            {show && <div className="overlay" onClick={() => setShow(false)}></div>}
+            {show && <div className="overlay" onClick={() => {
+                resetForm();
+                setShow(false);
+            }}></div>}
             {showCompleted && <div className="overlay" onClick={() => setShowCompleted(false)}></div>}
 
             <div className={`modal ${show ? 'showBlock' : 'showHidden'}`}>
                 <div className="modal-header">
                     <h2>Apply Here!</h2>
-                    <AiOutlineClose onClick={() => setShow(false)} />
+                    <AiOutlineClose onClick={() => {
+                        resetForm();
+                        setShow(false);
+                    }} />
                 </div>
                 <form className="modal-body" onSubmit={handleSubmit}>
                     <div className="input-group">
@@ -350,7 +380,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                             {!isGitHubValid && <p className="error-message">Invalid GitHub URL.</p>} {/* Error message */}
                         </div>
                     </div>
-{/* 
+                    {/* 
                     <div className="input-group">
                         <div className="input-column">
                             <label>Resume</label>
@@ -363,9 +393,9 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                             />
                         </div>
                     </div> */}
-                      <div className="input-group">
+                    <div className="input-group">
                         <div className="input-column">
-                            <label>Resume</label>
+                            <label>Resume Link</label>
                             <input
                                 type="text"
                                 name="resume"
@@ -379,8 +409,10 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ show, setShow, showComp
                     </div>
 
                     <div className="modal-footer">
-                        <button type="submit" className="submit-button">
-                            SUBMIT APPLICATION
+                        <button disabled={loading} type="submit" className="submit-button">
+                            {
+                                loading ? "Submitting..." : " Submit Application"
+                            }
                         </button>
                     </div>
                 </form>

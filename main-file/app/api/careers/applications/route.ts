@@ -28,8 +28,10 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     await dbConnect();
-
+    const reqBody = req.body;
+    console.log('reqbody comming:', reqBody)
     const applicationData = await req.json();
+    console.log('application data:', applicationData);
 
     // Check if application with same email exists for this career
     const existingApplication = await CareerApplication.findOne({

@@ -118,11 +118,20 @@ export const careerServices = {
     }
   },
 
-  async submitApplication(applicationData: FormData) {
+  async submitApplication(applicationData: any) {
     try {
-      const response = await axios.post('/api/career-applications', applicationData, {
+      // Format the data before sending
+      const formattedData = {
+        ...applicationData,
+        DOB: new Date(applicationData.dob).toISOString(), // Convert to proper date format
+        phoneNumber: applicationData.phone, // Match the model field name
+        linkedinProfile: applicationData.linkedin, // Match the model field name
+        githubProfile: applicationData.github, // Match the model field name
+      };
+
+      const response = await axios.post('/api/careers/applications', formattedData, {
         headers: {
-          'Content-Type': 'multipart/form-data',
+          'Content-Type': 'application/json',
           'Cache-Control': 'no-store',
           'Pragma': 'no-cache',
           'Expires': '0'
@@ -141,7 +150,7 @@ export const careerServices = {
 
   async updateApplicationStatus(applicationId: string, status: CareerApplication['status']) {
     try {
-      const response = await axios.patch(`/api/career-applications/${applicationId}/status`, 
+      const response = await axios.patch(`/api/career-applications/${applicationId}/status`,
         { status },
         {
           headers: {

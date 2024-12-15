@@ -6,6 +6,7 @@ import ModalComponent from './Modal';
 import { jobsData } from '@/constants/jobsData';
 import { careerServices } from '@/services/careerServices'; // Make sure to import careerServices
 import toast from 'react-hot-toast'; // Assuming you're using react-hot-toast for notifications
+import Loader from '../Loader';
 
 // Define the interface for Career type
 interface Career {
@@ -21,8 +22,9 @@ const Career = () => {
     const [show, setShow] = useState(false);
     const [showCompleted, setShowCompleted] = useState(false);
     const [job, setJob] = useState('');
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [careers, setCareers] = useState<Career[]>([]); // Add type annotation here
+    const [jobId,setJobId]=useState<string|null>(null);
 
 
     const fetchCareers = async () => {
@@ -72,7 +74,7 @@ const Career = () => {
 
                     <div className="job-listings">
                         {loading ? (
-                            <div>Loading...</div>
+                            <Loader/>
                         ) : careers.length > 0 ? (
                             careers.map((career, index) => (
                                 <div key={career._id || index} className="job-card">
@@ -86,6 +88,7 @@ const Career = () => {
                                             onClick={() => {
                                                 setShow(true);
                                                 setJob(career.name);
+                                                setJobId(career._id);
                                             }}
                                         >
                                             Apply Now<MdArrowForward className="ml-2" />
@@ -104,6 +107,7 @@ const Career = () => {
                 show={show}
                 setShow={setShow}
                 job={job}
+                jobId={jobId}
                 showCompleted={showCompleted}
                 setShowCompleted={setShowCompleted}
             />
