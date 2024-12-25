@@ -191,7 +191,7 @@ const Brand = () => {
                     </SwiperSlide> */}
 
                     {clients.map((client, index) => (
-                      <SwiperSlide>
+                      <SwiperSlide key={index}>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                           <div className="brand__image image">
                             {/* @ts-ignore */}
